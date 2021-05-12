@@ -3,8 +3,9 @@ import styled from 'styled-components'
 
 export const InfoSec = styled.div`
     color: #fff;
-    padding: 120px 0;
-    background: ${({ lightBg }) => (lightBg ? '#fff' : '#111933')};
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(${props => props.img});
 `
 
 export const InfoRow = styled.div`
@@ -12,7 +13,8 @@ export const InfoRow = styled.div`
     margin: 0 -15px -15px -15px;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+    
+    flex-direction: row;
 `
 
 export const InfoColumn = styled.div`
@@ -20,9 +22,9 @@ export const InfoColumn = styled.div`
     padding-right: 15px;
     padding-left: 15px;
     flex: 1;
-    max-width: 50%;
-    flex-basis: 50%;
-
+    max-width: 49%;
+    flex-basis: 49%;
+    justify-content: space-around;
     @media screen and (max-width: 768px) {
         max-width: 100%;
         flex-basis: 100%;
@@ -35,6 +37,7 @@ export const TextWrapper = styled.div `
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    
 
     @media screen and (max-width: 768px) {
         padding-bottom: 65px;
@@ -50,6 +53,16 @@ export const TopLine = styled.div `
     margin-bottom: 16px;
 `
 
+export const Divider = styled.div `
+    border-left: 2px solid white;
+    height: 160px;
+    margin-bottom: 45px;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`
+
 export const Heading = styled.h1 `
     margin-bottom: 24px;
     font-size: 30px;
@@ -58,12 +71,22 @@ export const Heading = styled.h1 `
 `
 
 export const Subtitle = styled.p `
-    max-width: 440px;
+    max-width: 100%;
     margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 40px;
     color: ${({lightTextDesc}) => (lightTextDesc ? '#f7f8fa' : '#1c2237')};
+    white-space: pre-line;
+    padding-left: 55px;
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+        line-height: 25px;
+    }
 `
+
+
 
 export const ImageWrapper = styled.div `
     max-width: 555px;

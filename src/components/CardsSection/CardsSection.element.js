@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardSection = styled.div`
-  padding: 100px 0 160px;
+  padding: 30px 0 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,6 @@ export const CardsWrapper = styled.div`
 
 export const CardsHeading = styled.h1`
   font-size: 3rem;
-  margin-bottom: 24px;
 
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -51,7 +50,7 @@ export const Card = styled.div`
     url(${props => props.img});
   background-size: cover;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 320px;
+  width: 300px;
   height: 500px;
   text-decoration: none;
   border-radius: 4px;
@@ -114,6 +113,7 @@ export const CardInfo = styled.div`
   &:hover {
     ${CardHidden} {
       margin-top:0px;
+      transition: all 0.3s ease-out;
     }
   }
   

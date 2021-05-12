@@ -28,7 +28,10 @@ const CardsSection = () => {
             <CardSection>
                 <CardsWrapper>
                     <Fade>
-                    <CardsHeading>{t('Cards.CardsHeading')}</CardsHeading>
+                    <CardsHeading>
+                        Journey to Digital Transformation
+                        {/* {t('Cards.CardsHeading')} */}
+                        </CardsHeading>
                     </Fade>
     
                     <CardsContainer>
@@ -58,6 +61,9 @@ const CardsSection = () => {
                                 <CardImg src={require('../../images/japan.svg').default} alt='japan'/>
                                 <CardSubHeading>{t('Cards.CardSubHeading2')}</CardSubHeading>
                                 <p onClick={handleClick}>asdfadsf</p>
+
+
+                                
                                 </CardHidden>
                             </CardInfo>
                             </Fade>
