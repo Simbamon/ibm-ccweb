@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from '../../images/test.mp4'
+import Img from '../../images/5.jpg'
 import { useTranslation } from 'react-i18next';
 import { Wrapper, BackgroundVid, Videosrc, TitleTextWrapper, MainTitle, MainParagraph, MainParagraph2 } from './MainInfoSection.element'
 
@@ -8,9 +8,7 @@ const MainInfoSection = () => {
 
     return (
         <>  
-            <BackgroundVid>
-                <Videosrc autoPlay loop muted src={ Video } type = 'video/mp4' />
-            </BackgroundVid>
+            <BackgroundVid img = {Img}></BackgroundVid>
             <Wrapper>
                 
                 

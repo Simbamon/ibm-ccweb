@@ -7,13 +7,16 @@ export const BackgroundVid = styled.div `
     bottom: 0;
     left: 0;
     max-width: 100%;
-    height: 100%;
+    height: 70%;
     overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(${props => props.img});
+    background-size: 100% 100%;
+
 `
 
 export const Videosrc = styled.video `
     width: 100%;
-    height: 70%;
     object-fit: cover;
     z-index: -1;
     

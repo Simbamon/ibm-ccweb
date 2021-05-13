@@ -4,8 +4,7 @@ import styled from 'styled-components'
 export const InfoSec = styled.div`
     color: #fff;
     padding: 60px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(${props => props.img});
+    background-color: #F2F4F8
 `
 
 export const InfoRow = styled.div`
@@ -38,7 +37,7 @@ export const TextWrapper = styled.div `
     padding-top: 0;
     padding-bottom: 60px;
     
-
+    
     @media screen and (max-width: 768px) {
         padding-bottom: 65px;
     }
@@ -54,8 +53,8 @@ export const TopLine = styled.div `
 `
 
 export const Divider = styled.div `
-    border-left: 2px solid white;
-    height: 160px;
+    border-left: 2px solid black;
+    height: 100px;
     margin-bottom: 45px;
     
     @media screen and (max-width: 768px) {
@@ -67,7 +66,7 @@ export const Heading = styled.h1 `
     margin-bottom: 24px;
     font-size: 30px;
     line-height: 35px;
-    color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};
+    color: black;
 `
 
 export const Subtitle = styled.p `
@@ -75,7 +74,7 @@ export const Subtitle = styled.p `
     margin-bottom: 35px;
     font-size: 19px;
     line-height: 40px;
-    color: ${({lightTextDesc}) => (lightTextDesc ? '#f7f8fa' : '#1c2237')};
+    color: black;
     white-space: pre-line;
     padding-left: 55px;
 
