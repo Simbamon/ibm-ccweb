@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const InfoSec = styled.div`
     color: #fff;
     padding: 60px 0;
-    background-color: #F2F4F8
+    background-color: #F2F4F8;
 `
 
 export const InfoRow = styled.div`
@@ -65,7 +65,7 @@ export const Divider = styled.div `
 export const Heading = styled.h1 `
     margin-bottom: 24px;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 40px;
     color: black;
 `
 
@@ -73,7 +73,7 @@ export const Subtitle = styled.p `
     max-width: 100%;
     margin-bottom: 35px;
     font-size: 19px;
-    line-height: 40px;
+    line-height: 35px;
     color: black;
     white-space: pre-line;
     padding-left: 55px;

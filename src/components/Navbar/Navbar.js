@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavLanguage, NavBottom, SocialIcon } from './Navbar_element'
+import { Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavLanguage, NavBottom, SocialIcon, ReserveButton } from './Navbar_element'
 import { IconContext } from 'react-icons/lib'
 import { useTranslation } from 'react-i18next';
 
@@ -38,9 +38,8 @@ const Navbar = () => {
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
                         <NavLogo to='/ibm-demozone' >
-                        <NavIcon src={require('../../images/drawing.svg').default} alt='ibm' />
-                            {/* <NavIcon />
-                            DEMO HUB */}
+                            {/* <NavIcon src={require('../../images/drawing.svg').default} alt='ibm' /> */}
+                            IBM Client Center Korea
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
@@ -49,14 +48,7 @@ const Navbar = () => {
                             <NavItem>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/ibm-demozone'>
-                                    {t('NavbarContents.1')}
-                                </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='/ibm-demozone/demo'>
-                                    {t('NavbarContents.2')}
-                                </NavLinks>
+                                <ReserveButton>RESERVATION</ReserveButton>
                             </NavItem>
 
                             <NavBottom>

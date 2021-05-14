@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Container } from '../../globalStyles'
 
 export const Nav = styled.nav `
-  background: ${({scrollNav}) => (scrollNav ? 'rgb(30, 30, 30)' : 'transparent')};
+  background: black;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -16,12 +15,22 @@ export const Nav = styled.nav `
   transition: 0.5s all ease;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 60px;
 
-  ${Container}
+  z-index: 1;
+  width: 100%;
+  max-width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 50px;
+
+  @media screen and (max-width: 991px) {
+      padding-right: 30px;
+      padding-left: 30px;
+  }
   
 `;
 
@@ -33,6 +42,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   z-index: 999;
+  font-size: 20px;
 `;
 
 export const NavIcon = styled.img`
@@ -168,3 +178,28 @@ export const NavBtnLink = styled(Link)`
   border: none;
   outline: none;
 `;
+
+export const ReserveButton = styled.button`
+    background: blue;
+    white-space: nowrap;
+    height: 60px;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin-right: 0;
+    width: 100%;
+
+    &:hover {
+        transition: all 0.3s ease-out;
+        border: 0px;
+        background: white;
+        color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+`

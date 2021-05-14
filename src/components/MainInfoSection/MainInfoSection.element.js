@@ -25,17 +25,18 @@ export const Videosrc = styled.video `
 export const Wrapper = styled.div `
     display: flex;
     justify-content: flex-start;
-    max-width: 1300px;
+    max-width: 100%;
     align-items: center;
     height: 70vh;
     min-height: -webkit-fill-available;
-    
+
     margin-right: auto;
     margin-left: auto;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 5%;
 
     @media screen and (max-width: 991px) {
+        max-width: 1300px;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -44,81 +45,78 @@ export const Wrapper = styled.div `
 `
 
 export const TitleTextWrapper = styled.div `
+    border: 1px solid white;
+    min-width: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    padding: 35px;
     position: absolute;
     display: flex;
     flex-direction: column;
     z-index: 3;
+
+    @media screen and (max-width: 991px) {
+        min-width: 280px;
+        padding: 20px;
+    }
 `
 
 export const MainTitle = styled.h1 `
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 2rem;
     text-align: left;
+    margin-bottom: 15px;
 
     @media screen and (max-width: 768px) {
-        font-size: 3rem;
-        max-width: 280px;
+        font-size: 1rem;
+        max-width: 250px;
     }
     
     @media screen and (max-width: 480px) {
-        font-size: 2.5rem;
-        max-width: 280px;
+        font-size: 1rem;
+        max-width: 250px;
     }
 `
 
 export const MainParagraph = styled.p `
-    margin-top: 24px;
+    margin-top: 8px;
+    padding-left: 5px;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 0.85rem;
     text-align: left;
-    max-width: 600px;
+    max-width: 700px;
     @media screen and (max-width: 768px) {
-        font-size: 1rem;
-        max-width: 280px;
+        font-size: 0.7rem;
+        max-width: 270px;
     }
     
     @media screen and (max-width: 480px) {
-        max-width: 280px;
-        font-size: 0.9rem;
+        max-width: 270px;
+        font-size: 0.6rem;
     }
 
 `
 
-export const MainParagraph2 = styled.p `
-    margin-top: 5px;
-    color: #fff;
-    font-size: 0.9rem;
-    text-align: left;
-    max-width: 480px;
-    @media screen and (max-width: 768px) {
-        font-size: 1rem;
-        max-width: 280px;
-    }
-    
-    @media screen and (max-width: 480px) {
-        max-width: 280px;
-        font-size: 0.9rem;
-    }
-
-`
-
-export const TitleLine = styled.hr `
-    height: 8px;
-    background-color: #fff;
-    color: #fff;
+export const ReserveButton = styled.button`
     margin-top: 30px;
-    margin-bottom: 15px;
-    width: 36%;
+    background: blue;
+    white-space: nowrap;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid blue;
+    cursor: pointer;
+    margin-right: 0;
+    width: 30%;
 
-    @media screen and (max-width: 768px) {
-        margin-top: 15px;
-        margin-bottom: 5px;
-        width: 50%;
+    &:hover {
+        transition: all 0.3s ease-out;
+        border: 2px solid white;
+        background: white;
+        color: black;
     }
 
-    @media screen and (max-width: 480px) {
-        margin-top: 15px;
-        margin-bottom: 5px;
-        width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
 `
