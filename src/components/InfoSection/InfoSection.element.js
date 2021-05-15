@@ -82,6 +82,7 @@ export const Subtitle = styled.p `
     @media screen and (max-width: 768px) {
         font-size: 13px;
         line-height: 25px;
+        padding-left: 0px;
     }
 `
 

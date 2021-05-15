@@ -47,5 +47,14 @@
         "NewsLetter1":"Enter your e-mail address",
         "NewsLetter2":"Subscribe"
 
+    },
+    "DigitalJourney":{
+        "Intro":"프로그램 소개",
+        "Config":"프로그램 구성",
+        "Guide": "프로그램 안내",
+        "DAIIntro":"test",
+        "DAIConfig":"• test\n• test\n• test\n•  AI 라이프 싸이클 데모\n•  신뢰할 수 있는 모델의 운영 관리",
+        "DAIGuide":""
+
     }
 }

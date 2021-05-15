@@ -10,6 +10,7 @@ const Home = () => {
             <InfoSection {...InfoOne} />
             
             <CardsSection />
+            <InfoSection2 />
             {/* <InfoSection3 {...InfoThree} />
             <InfoSection2 {...InfoTwo} /> */}
             

@@ -40,10 +40,10 @@ const CardsSection = () => {
                             <Card to='/' img = {"https://380342-1192392-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/briefing-no-desenvolvimento-de-projetos-696x464.jpg"}>
                                 <Fade>
                                 <CardInfo>
-                                    <CardTitle>TECHNOLOGY<br></br> BRIEFING</CardTitle>
+                                    <CardTitle>Technology<br></br> Briefing</CardTitle>
                                     <CardHidden>
                                         <CardImg src={require('../../images/usa.svg').default} alt='usa'/>
-                                        <CardSubHeading>{t('Cards.CardSubHeading1')}</CardSubHeading>
+                                        <CardSubHeading>Data and AI, Hybrid Cloud 기술을 이해해 보세요!</CardSubHeading>
                                         <p onClick={handleClick}>asdfadsf</p>
                                     </CardHidden>
                                     
@@ -76,10 +76,10 @@ const CardsSection = () => {
                             <Card to='/' img = {"https://cdn.techinasia.com/wp-content/uploads/2016/03/mox-demo-day-2016-a-crowd.jpg"}>
                             <Fade>
                             <CardInfo>
-                                <CardTitle>EXPERIENCE<br></br>DAY</CardTitle>
+                                <CardTitle>Experience<br></br>Day</CardTitle>
                                 <CardHidden>
                                     <CardImg src={require('../../images/japan.svg').default} alt='japan'/>
-                                    <CardSubHeading>{t('Cards.CardSubHeading2')}</CardSubHeading>
+                                    <CardSubHeading>자료로만 익혔던 기술, 이젠 당신의 손으로 직접 경험해 보세요!</CardSubHeading>
                                 </CardHidden>
                                 
                             </CardInfo>
@@ -91,7 +91,7 @@ const CardsSection = () => {
                              <Card img = {"https://cdn.techinasia.com/wp-content/uploads/2016/03/mox-demo-day-2016-a-crowd.jpg"}>
                             <Fade>
                             <CardInfo>
-                                <CardTitle>EXPERIENCE<br></br>DAY</CardTitle>
+                                <CardTitle>Experience<br></br>Day</CardTitle>
                                 <CardHidden>
                                 <CardImg src={require('../../images/japan.svg').default} alt='japan'/>
                                 <CardSubHeading>{t('Cards.CardSubHeading2')}</CardSubHeading>
@@ -107,7 +107,7 @@ const CardsSection = () => {
                                 <Card img = {"https://i.pinimg.com/originals/5a/0b/d7/5a0bd7df42e79dc2ce5024a9d6d67da7.jpg"}>
                                     <Fade>
                                     <CardInfo>
-                                        <CardTitle>DISCOVERY<br></br>WORKSHOP</CardTitle>
+                                        <CardTitle>Discovery<br></br>Workshop</CardTitle>
                                         <CardHidden>
                                         <CardImg src={require('../../images/blog.svg').default} alt='ibm'/>
                                         <CardSubHeading>{t('Cards.CardSubHeading3')}</CardSubHeading>

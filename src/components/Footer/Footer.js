@@ -14,6 +14,7 @@ const Footer = () => {
   
     function handleClick(lang){
         i18n.changeLanguage(lang);
+        window.location.reload();
     }
 
     useEffect(

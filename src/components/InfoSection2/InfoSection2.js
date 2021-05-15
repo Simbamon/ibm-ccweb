@@ -1,42 +1,78 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Container, Button } from '../../globalStyles'
-import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImageWrapper, Img } from '../InfoSection/InfoSection.element'
+import React, { useState } from 'react'
+import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, Flexbox2, StepTitle, Container,
+         SummaryTitle, SummaryDescription, Picture, ExampleButton } from './InfoSection2.element'
 import { useTranslation } from 'react-i18next';
 import Fade from 'react-reveal/Fade'
 
-const InfoSection2 = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, lightText, img, alt }) => {
-    const { t } = useTranslation();    
+const InfoSection2 = () => {
+    const { t } = useTranslation();
+    
+    const [TechState, setTechState] = useState({
+        intro: t('DigitalJourney.DAIIntro'),
+        config: t('DigitalJourney.DAIConfig'),
+        guide: t('DigitalJourney.DAIGuide'),
+
+    })
+
+    const intro = TechState.intro
+    const config = TechState.config
+    const guide = TechState.guide
+
+    function changeText1() {
+        setTechState({
+            intro: t('DigitalJourney.DAIIntro'),
+            config: t('DigitalJourney.DAIConfig'),
+            guide: t('DigitalJourney.DAIGuide'),
+        })
+    }
+
+    function changeText2() {
+        setTechState({
+            intro: 'asdfadsf',
+            config: 'asfadsfasdf',
+            guide: 'asdfadsfdsaf',
+        })
+    }
     
     return (
         <>
-            <InfoSec lightBg={lightBg}>
+            <BackgroundSection>
                 <Container>
-                    <InfoRow imgStart={imgStart}>
-                        <InfoColumn>
-                            <Fade left>
-                            <TextWrapper>
-                                <TopLine lightTopLine={lightTopLine}>{t('Home.SecondTopLine')}</TopLine>
-                                <Heading lightText={lightText}>{t('Home.SecondHeadLine')}</Heading>
-                                <Subtitle lightTextDesc={lightTextDesc}>{t('Home.SecondSummary')}</Subtitle>
-                                <Link to=''>
-                                    <Button big fontBig primary={primary}>
-                                        {t('Home.SecondButton')}
-                                    </Button>
-                                </Link> 
-                            </TextWrapper>
-                            </Fade>
-                        </InfoColumn>
-                        <InfoColumn>
-                            <Fade left>
-                                <ImageWrapper>
-                                    <Img src={img} alt={alt} />
-                                </ImageWrapper>
-                            </Fade>
-                        </InfoColumn>
-                    </InfoRow>
+                    
+                <MainFlexbox>
+                        <Flexbox1>
+                            <StepTitle>Technology<br></br>Briefing</StepTitle>
+                        </Flexbox1>
+                        <Flexbox2>
+                            <ButtonBox>
+                                <ExampleButton onClick={changeText1}>Data <span>&#38;</span> AI Briefing</ExampleButton>
+                                <ExampleButton onClick={changeText2}>Open Hybrid Cloud Briefing</ExampleButton>
+                                <ExampleButton onClick={changeText1}>Cloud Native Tech Briefing</ExampleButton>
+                          
+                            </ButtonBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 소개</SummaryTitle>
+                                <SummaryDescription>{intro}</SummaryDescription>
+                            </SummaryBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 구성</SummaryTitle>
+                                <SummaryDescription>{config}</SummaryDescription>
+                                
+                            </SummaryBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 안내</SummaryTitle>
+                                <SummaryDescription>{guide}</SummaryDescription>
+                            </SummaryBox>
+                            <SummaryBox>
+                                <Picture src={require('../../images/5.jpg').default} alt='japan'/>
+                            </SummaryBox>
+                        </Flexbox2>
+                    </MainFlexbox>
+                    
                 </Container>
-            </InfoSec>
+                    
+            </BackgroundSection>
+            
         </>
     )
 }

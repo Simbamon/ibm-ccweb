@@ -47,7 +47,15 @@
         "NewsLetter":" 지금 IBM 뉴스레터를 구독하세요",
         "NewsLetter1":"이메일 입력",
         "NewsLetter2":"구독하기"
-        
+    },
+    "DigitalJourney":{
+        "Intro":"프로그램 소개",
+        "Config":"프로그램 구성",
+        "Guide": "프로그램 안내",
+        "DAIIntro":"머신 러닝과 AI 는 경쟁 우위를 확보할 수 있는 강력한 수단입니다. 하지만, 머신 러닝과 AI를 성공적으로 수용하기 위해서는 기술과 경험이 필요합니다. 본 세션에서는 머신 러닝 및 AI를 비즈니스에 활용하고자 하는 고객들의 이해를 돕기 위해 AI 라이프 싸이클 전반에 걸친 내용을 데모 중심으로 구성하였습니다.",
+        "DAIConfig":"•  기업의 AI 접목 추세\n•  다중 데이터소스관리를 위한 데이터 가상화 및 거버넌스\n•  머신 러닝 및 AI 모델 개발 및 평가 관리\n•  AI 라이프 싸이클 데모\n•  신뢰할 수 있는 모델의 운영 관리",
+        "DAIGuide":"•  대상 : 전략 기획팀, AI를 적용하고자 하는 현업, IT 담당, CxO\n•  소요 시간 : 2시간\n•  세션 완료 이후 제안 프로그램 :\n    -  Data and AI Experience Day\n    -  Watson Discovery Experience Day\n    -  Ladder to AI Workshop"
 
     }
+
 }
