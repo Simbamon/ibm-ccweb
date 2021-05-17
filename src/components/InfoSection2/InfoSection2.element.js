@@ -34,13 +34,14 @@ export const MainFlexbox = styled.div`
 `
 
 export const Flexbox1 = styled.div`
-    min-height: 100px;
-    background-color: transparent;
+    flex: 1 1 15%;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     display: flex;
 
     @media screen and (max-width: 991px) {
+        flex: 1 1 100%;
         margin-left: 0px;
     }
 `
@@ -48,6 +49,7 @@ export const Flexbox1 = styled.div`
 export const StepTitle = styled.h1 `
     text-align: center;
     justify-content: center;
+    align-items:center;
     margin: 50px;
 
     @media screen and (max-width: 991px) {
@@ -56,6 +58,7 @@ export const StepTitle = styled.h1 `
 `
 
 export const Flexbox2 = styled.div`
+    flex: 1 0 75%;
     flex-grow: 2;
     flex-wrap: wrap;
     align-items: center;
@@ -78,10 +81,10 @@ export const ButtonBox = styled.div`
 `
 export const SummaryBox = styled.div`
     flex: 1 0 calc(50% - 10px);
-    width: 100px;
     background-color: transparent;
     padding: 40px;
-    max-height: 200px;
+    max-height: 220px;
+    min-height: 220px;
 
 
     @media screen and (max-width: 1300px) {
@@ -101,7 +104,7 @@ export const SummaryBox = styled.div`
 export const SummaryTitle = styled.h1`
     font-size: 1.52rem;
     border-bottom: 2px solid blue;
-    width: 300px;
+    width: 50%;
     padding-bottom: 10px;
     margin-bottom: 10px;
 
@@ -113,12 +116,13 @@ export const SummaryTitle = styled.h1`
 export const SummaryDescription = styled.p`
     font-size: 0.8rem;
     white-space: pre-wrap;
+    width: 80%;
 `
 
 export const Picture = styled.img`
     background-size: cover;
-    width: 350px;
-    height: 150px;
+    width: 100%;
+    height: 200px;
 
     @media screen and (max-width: 991px) {
         width: 100%;
@@ -137,7 +141,7 @@ export const ExampleButton = styled.button`
     border: 0;
     cursor: pointer;
     margin-right: 0;
-    width: 26%;
+    width: 33%;
     height: 100%;
     
 
@@ -147,8 +151,8 @@ export const ExampleButton = styled.button`
         color:white;
     }
 
-    @media screen and (max-width: 960px) {
-        width: 80%;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
         margin: 5px;
     }
 `

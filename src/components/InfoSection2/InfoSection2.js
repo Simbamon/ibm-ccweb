@@ -2,35 +2,92 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, Flexbox2, StepTitle, Container,
          SummaryTitle, SummaryDescription, Picture, ExampleButton } from './InfoSection2.element'
 import { useTranslation } from 'react-i18next';
+import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
 
 const InfoSection2 = () => {
     const { t } = useTranslation();
-    
-    const [TechState, setTechState] = useState({
-        intro: t('DigitalJourney.DAIIntro'),
-        config: t('DigitalJourney.DAIConfig'),
-        guide: t('DigitalJourney.DAIGuide'),
+
+    const [State, setState] = useState({
+        taIntro: t('DigitalJourney.DAIIntro'),
+        taConfig: t('DigitalJourney.DAIConfig'),
+        taGuide: t('DigitalJourney.DAIGuide'),
+        edIntro: t('DigitalJourney.DSIntro'),
+        edConfig: t('DigitalJourney.DSConfig'),
+        edGuide: t('DigitalJourney.DSGuide'),
 
     })
 
-    const intro = TechState.intro
-    const config = TechState.config
-    const guide = TechState.guide
+    const taIntro = State.taIntro
+    const taConfig = State.taConfig
+    const taGuide = State.taGuide
+    const edIntro = State.edIntro
+    const edConfig = State.edConfig
+    const edGuide = State.edGuide
 
-    function changeText1() {
-        setTechState({
-            intro: t('DigitalJourney.DAIIntro'),
-            config: t('DigitalJourney.DAIConfig'),
-            guide: t('DigitalJourney.DAIGuide'),
+    function changeDA() {
+        setState({
+            taIntro: t('DigitalJourney.DAIIntro'),
+            taConfig: t('DigitalJourney.DAIConfig'),
+            taGuide: t('DigitalJourney.DAIGuide'),
+            edIntro: t('DigitalJourney.DSIntro'),
+            edConfig: t('DigitalJourney.DSConfig'),
+            edGuide: t('DigitalJourney.DSGuide'),
         })
     }
 
-    function changeText2() {
-        setTechState({
-            intro: 'asdfadsf',
-            config: 'asfadsfasdf',
-            guide: 'asdfadsfdsaf',
+    function changeOH() {
+        setState({
+            taIntro: t('DigitalJourney.OHIntro'),
+            taConfig: t('DigitalJourney.OHConfig'),
+            taGuide: t('DigitalJourney.OHGuide'),
+            edIntro: t('DigitalJourney.DSIntro'),
+            edConfig: t('DigitalJourney.DSConfig'),
+            edGuide: t('DigitalJourney.DSGuide'),
+        })
+    }
+
+    function changeCN() {
+        setState({
+            taIntro: t('DigitalJourney.CNIntro'),
+            taConfig: t('DigitalJourney.CNConfig'),
+            taGuide: t('DigitalJourney.CNGuide'),
+            edIntro: t('DigitalJourney.DSIntro'),
+            edConfig: t('DigitalJourney.DSConfig'),
+            edGuide: t('DigitalJourney.DSGuide'),
+        })
+    }
+
+    function changeDS() {
+        setState({
+            taIntro: t('DigitalJourney.CNIntro'),
+            taConfig: t('DigitalJourney.CNConfig'),
+            taGuide: t('DigitalJourney.CNGuide'),
+            edIntro: t('DigitalJourney.DSIntro'),
+            edConfig: t('DigitalJourney.DSConfig'),
+            edGuide: t('DigitalJourney.DSGuide'),
+        })
+    }
+
+    function changeWD() {
+        setState({
+            taIntro: t('DigitalJourney.CNIntro'),
+            taConfig: t('DigitalJourney.CNConfig'),
+            taGuide: t('DigitalJourney.CNGuide'),
+            edIntro: t('DigitalJourney.WDIntro'),
+            edConfig: t('DigitalJourney.WDConfig'),
+            edGuide: t('DigitalJourney.WDGuide'),
+        })
+    }
+
+    function changeAM() {
+        setState({
+            taIntro: t('DigitalJourney.CNIntro'),
+            taConfig: t('DigitalJourney.CNConfig'),
+            taGuide: t('DigitalJourney.CNGuide'),
+            edIntro: t('DigitalJourney.AMIntro'),
+            edConfig: t('DigitalJourney.AMConfig'),
+            edGuide: t('DigitalJourney.AMGuide'),
         })
     }
     
@@ -38,36 +95,68 @@ const InfoSection2 = () => {
         <>
             <BackgroundSection>
                 <Container>
-                    
-                <MainFlexbox>
+                <Carousel>
+                    <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Technology<br></br>Briefing</StepTitle>
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeText1}>Data <span>&#38;</span> AI Briefing</ExampleButton>
-                                <ExampleButton onClick={changeText2}>Open Hybrid Cloud Briefing</ExampleButton>
-                                <ExampleButton onClick={changeText1}>Cloud Native Tech Briefing</ExampleButton>
-                          
+                                <ExampleButton onClick={changeDA}>Data <span>&#38;</span> AI Briefing</ExampleButton>
+                                <ExampleButton onClick={changeOH}>Open Hybrid Cloud Briefing</ExampleButton>
+                                <ExampleButton onClick={changeCN}>Cloud Native Tech Briefing</ExampleButton>
                             </ButtonBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 소개</SummaryTitle>
-                                <SummaryDescription>{intro}</SummaryDescription>
+                                <SummaryDescription>{taIntro}</SummaryDescription>
                             </SummaryBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 구성</SummaryTitle>
-                                <SummaryDescription>{config}</SummaryDescription>
+                                <SummaryDescription>{taConfig}</SummaryDescription>
                                 
                             </SummaryBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 안내</SummaryTitle>
-                                <SummaryDescription>{guide}</SummaryDescription>
+                                <SummaryDescription>{taGuide}</SummaryDescription>
                             </SummaryBox>
                             <SummaryBox>
                                 <Picture src={require('../../images/5.jpg').default} alt='japan'/>
                             </SummaryBox>
                         </Flexbox2>
                     </MainFlexbox>
+
+                    <MainFlexbox>
+                        <Flexbox1>
+                            <StepTitle>Experience<br></br>Day</StepTitle>
+                        </Flexbox1>
+                        <Flexbox2>
+                            <ButtonBox>
+                                <ExampleButton onClick={changeDS}>Data Science</ExampleButton>
+                                <ExampleButton onClick={changeWD}>Watson Discovery </ExampleButton>
+                                <ExampleButton onClick={changeAM}>App Modernization</ExampleButton>
+                          
+                            </ButtonBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 소개</SummaryTitle>
+                                <SummaryDescription>{edIntro}</SummaryDescription>
+                            </SummaryBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 구성</SummaryTitle>
+                                <SummaryDescription>{edConfig}</SummaryDescription>
+                                
+                            </SummaryBox>
+                            <SummaryBox>
+                                <SummaryTitle>프로그램 안내</SummaryTitle>
+                                <SummaryDescription>{edGuide}</SummaryDescription>
+                            </SummaryBox>
+                            <SummaryBox>
+                                <Picture src={require('../../images/5.jpg').default} alt='japan'/>
+                            </SummaryBox>
+                        </Flexbox2>
+                    </MainFlexbox>
+                
+                </Carousel>    
+ 
                     
                 </Container>
                     
