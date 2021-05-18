@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav `
-  background: black;
+  background: white;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -34,9 +34,10 @@ export const NavbarContainer = styled.div`
   
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.h1`
   color: #fff;
   justify-self: flex-start;
+  color: black;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -185,7 +186,8 @@ export const ReserveButton = styled.button`
     height: 60px;
     padding: 10px 25px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
     outline: none;
     border: 0px;
     cursor: pointer;

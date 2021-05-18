@@ -5,7 +5,7 @@ export const CardSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
+  background-color: #f4f4f4;
 `
 
 export const CardsWrapper = styled.div`
@@ -50,7 +50,7 @@ export const Card = styled.div`
     url(${props => props.img});
   background-size: cover;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 300px;
+  width: 500px;
   height: 500px;
   text-decoration: none;
   border-radius: 4px;

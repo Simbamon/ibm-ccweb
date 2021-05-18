@@ -9,10 +9,10 @@ export const BackgroundVid = styled.div `
     max-width: 100%;
     height: 70%;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    background-image: 
     url(${props => props.img});
     background-size: 100% 100%;
-
+    
 `
 
 export const Videosrc = styled.video `
@@ -45,9 +45,9 @@ export const Wrapper = styled.div `
 `
 
 export const TitleTextWrapper = styled.div `
-    border: 1px solid white;
+    border: none;
     min-width: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     padding: 35px;
     position: absolute;
     display: flex;
@@ -102,12 +102,14 @@ export const ReserveButton = styled.button`
     white-space: nowrap;
     padding: 10px 25px;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: bold;
     outline: none;
     border: 2px solid blue;
     cursor: pointer;
     margin-right: 0;
     width: 30%;
+
 
     &:hover {
         transition: all 0.3s ease-out;

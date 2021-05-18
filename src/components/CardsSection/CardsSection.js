@@ -27,13 +27,6 @@ const CardsSection = () => {
         <>
             <CardSection>
                 <CardsWrapper>
-                    <Fade>
-                    <CardsHeading>
-                        Journey to Digital Transformation
-                        {/* {t('Cards.CardsHeading')} */}
-                        </CardsHeading>
-                    </Fade>
-    
                     <CardsContainer>
                         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                             <div>

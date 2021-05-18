@@ -21,7 +21,7 @@ const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, 
                                 <TextWrapper>
                                     <TopLine lightTopLine={lightTopLine}></TopLine>
                                     
-                                    <Heading lightText={lightText}>Journey to<br></br>Digital Transformation in 3 Steps</Heading>
+                                    <Heading lightText={lightText}>디지털 여정을 위한 고객 경험 3단계 프로그램</Heading>
                                     {/* <TopLine lightTopLine={lightTopLine}>{t('Home.FirstTopLine')}</TopLine>
                                     
                                     <Heading lightText={lightText}>{t('Home.FirstHeadLine')}</Heading>
@@ -35,7 +35,6 @@ const InfoSection = ({ primary, lightBg, imgStart, lightTopLine, lightTextDesc, 
                                 </TextWrapper>
                             </Fade>
                         </InfoColumn>
-                        <Divider></Divider>
                         <InfoColumn>
                             <Fade top>
                                     <Subtitle lightTextDesc={lightTextDesc}>{t('Home.FirstSummary')}</Subtitle>
