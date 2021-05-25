@@ -34,7 +34,7 @@ export const MainFlexbox = styled.div`
 `
 
 export const Flexbox1 = styled.div`
-    flex: 1 1 15%;
+    flex: 1 1 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;

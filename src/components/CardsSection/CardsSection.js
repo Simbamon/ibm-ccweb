@@ -33,7 +33,7 @@ const CardsSection = () => {
                             <Card to='/' img = {"https://380342-1192392-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/briefing-no-desenvolvimento-de-projetos-696x464.jpg"}>
                                 <Fade>
                                 <CardInfo>
-                                    <CardTitle>Technology<br></br> Briefing</CardTitle>
+                                    <CardTitle>Technology Briefing</CardTitle>
                                     <CardHidden>
                                         <CardImg src={require('../../images/usa.svg').default} alt='usa'/>
                                         <CardSubHeading>Data and AI, Hybrid Cloud 기술을 이해해 보세요!</CardSubHeading>
@@ -84,7 +84,7 @@ const CardsSection = () => {
                              <Card img = {"https://cdn.techinasia.com/wp-content/uploads/2016/03/mox-demo-day-2016-a-crowd.jpg"}>
                             <Fade>
                             <CardInfo>
-                                <CardTitle>Experience<br></br>Day</CardTitle>
+                                <CardTitle>Experience Day</CardTitle>
                                 <CardHidden>
                                 <CardImg src={require('../../images/japan.svg').default} alt='japan'/>
                                 <CardSubHeading>{t('Cards.CardSubHeading2')}</CardSubHeading>

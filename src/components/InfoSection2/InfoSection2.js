@@ -98,7 +98,7 @@ const InfoSection2 = () => {
                 <Carousel>
                     <MainFlexbox>
                         <Flexbox1>
-                            <StepTitle>Technology<br></br>Briefing</StepTitle>
+                            <StepTitle>Technology Briefing</StepTitle>
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>
@@ -127,7 +127,7 @@ const InfoSection2 = () => {
 
                     <MainFlexbox>
                         <Flexbox1>
-                            <StepTitle>Experience<br></br>Day</StepTitle>
+                            <StepTitle>Experience Day</StepTitle>
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>

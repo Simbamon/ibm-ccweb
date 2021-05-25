@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const CardSection = styled.div`
-  padding: 30px 0 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,16 +48,10 @@ export const Card = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
     url(${props => props.img});
   background-size: cover;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 500px;
-  height: 500px;
+  width: 33.33vw;
+  height: 200px;
   text-decoration: none;
-  border-radius: 4px;
   cursor: pointer;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
@@ -68,7 +61,7 @@ export const Card = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    width: 280px;
+    width: 100vw;
     margin-left: 20px;
     margin-right: 20px;
     &:hover {
@@ -121,7 +114,7 @@ export const CardInfo = styled.div`
 
 export const CardTitle = styled.h1`
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     margin-bottom: 35px;
     margin-top: 25px;
     text-align: center;
