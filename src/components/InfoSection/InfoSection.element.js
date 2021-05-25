@@ -18,12 +18,9 @@ export const InfoRow = styled.div`
 `
 
 export const InfoColumn = styled.div`
-    margin-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
     flex: 1;
-    max-width: 49%;
-    flex-basis: 49%;
+    max-width: 100%;
+    flex-basis: 100%;
     justify-content: space-around;
     @media screen and (max-width: 768px) {
         max-width: 100%;
@@ -34,9 +31,10 @@ export const InfoColumn = styled.div`
 `
 
 export const TextWrapper = styled.div `
-    max-width: 540px;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
     padding-top: 0;
-    padding-bottom: 60px;
     
     
     @media screen and (max-width: 768px) {
@@ -53,28 +51,44 @@ export const TopLine = styled.div `
     margin-bottom: 16px;
 `
 
-export const Divider = styled.div `
-    border-left: 2px solid black;
-    height: 100px;
-    margin-bottom: 45px;
-    
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
+export const Heading = styled.h1 `
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 42px;
+    color: black;
 `
 
-export const Heading = styled.h1 `
-    margin-bottom: 24px;
-    font-size: 33px;
-    line-height: 40px;
+export const SubHeading = styled.h1 `
+    margin-bottom: 16px;
+    font-size: 37px;
+    line-height: 42px;
     color: black;
+`
+
+export const ProgramLink = styled.a `
+    font-size: 21px;
+    line-height: 42px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+    padding-bottom: 10px;
+    background: linear-gradient(blue, blue) bottom/0% 2px no-repeat;
+    transition:0.5s all;
+
+
+    &:hover {
+        background-size: 100% 2px;
+    }
+    
+
 `
 
 export const Subtitle = styled.p `
     max-width: 100%;
-    margin-bottom: 35px;
+    margin-top: 16px;
+    margin-bottom: 10px;
     font-size: 21px;
-    line-height: 40px;
+    line-height: 35px;
     color: black;
     white-space: pre-line;
     padding-left: 55px;

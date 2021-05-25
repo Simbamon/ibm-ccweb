@@ -3,17 +3,17 @@ import styled from 'styled-components'
 export const BackgroundSection = styled.div`
     color: black;
     padding: 60px 0;
-    background-color: #F2F4F8;
+    background-color: white;
 `
 
 export const Container = styled.div `
     z-index: 1;
     width: 100%;
-    max-width: 1500px;
+    max-width: 100vw;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 10vw;
+    padding-left: 10vw;
     margin-bottom: 100px;
     
 
@@ -30,11 +30,10 @@ export const MainFlexbox = styled.div`
     align-items: center;
     justify-content:center;
     flex-direction: row;
-    margin: 0 -15px -15px -15px;
 `
 
 export const Flexbox1 = styled.div`
-    flex: 1 1 100%;
+    flex: 1 1 30%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -58,7 +57,7 @@ export const StepTitle = styled.h1 `
 `
 
 export const Flexbox2 = styled.div`
-    flex: 1 0 75%;
+    flex: 1 0 70%;
     flex-grow: 2;
     flex-wrap: wrap;
     align-items: center;
@@ -79,6 +78,27 @@ export const ButtonBox = styled.div`
         align-items: center;
     }
 `
+
+export const SummaryTitleBox = styled.div`
+    flex: 1 0 100%;
+    margin: 10px;
+    align-items: center;
+    background-color: blue;
+
+    @media screen and (max-width: 1300px) {
+        max-height: 200px;
+    }
+
+    @media screen and (max-width: 991px) {
+        flex: 1 0 calc(100% - 10px);
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+`
+
 export const SummaryBox = styled.div`
     flex: 1 0 calc(50% - 10px);
     background-color: transparent;
@@ -144,7 +164,9 @@ export const ExampleButton = styled.button`
     width: 33%;
     height: 100%;
     
-
+    &:focus {
+        background: blue;
+    }
     &:hover {
         transition: all 0.3s ease-out;
         background: blue;

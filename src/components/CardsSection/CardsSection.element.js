@@ -1,10 +1,17 @@
 import styled from 'styled-components'
 
 export const CardSection = styled.div`
+  padding-top: 50px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #f4f4f4;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
 `
 
 export const CardsWrapper = styled.div`
@@ -44,14 +51,36 @@ export const CardsContainer = styled.div`
   }
 `
 
-export const Card = styled.div`
+export const TitleCard = styled.div `
+  position: relative;
+	left: 50%;
+	height: 50px;
+	width: 60%;
+  transform: translate(-50%, -50%);
+	background-color: green;
+  border-radius: 20px;
+	text-align: center;
+  color: white;
+  font-weight: bold;
+  flex-wrap: wrap;
+  line-height: 50px;
+  font-size: 1.2rem;
+
+  @media screen and (max-width: 960px) {
+    font-size: 0.9rem;
+  }
+`
+
+export const Cards = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
     url(${props => props.img});
   background-size: cover;
-  width: 33.33vw;
-  height: 200px;
+  width: 28vw;
+  margin: 10px;
+  height: 300px;
   text-decoration: none;
   cursor: pointer;
+  
 
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
@@ -62,8 +91,7 @@ export const Card = styled.div`
 
   @media screen and (max-width: 1200px) {
     width: 100vw;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 25px;
     &:hover {
       transform: none;
     }
@@ -77,6 +105,7 @@ export const Card = styled.div`
     }
   }
 `
+
 export const CardHidden = styled.div`
   padding-top: 0px;
     overflow:hidden;
@@ -84,7 +113,7 @@ export const CardHidden = styled.div`
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    margin-top:500px;
+    margin-top:300px;
   
   @media screen and (max-width: 960px) {
     margin-top:0px;
@@ -98,7 +127,7 @@ export const CardHidden = styled.div`
 export const CardInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 300px;
   padding: 10px;
   align-items: left;
   color: #fff;
@@ -115,9 +144,8 @@ export const CardInfo = styled.div`
 export const CardTitle = styled.h1`
     color: #fff;
     font-size: 2.3rem;
-    margin-bottom: 35px;
-    margin-top: 25px;
     text-align: center;
+    vertical-align: middle;
     
 
 `
