@@ -37,7 +37,7 @@ const Navbar = () => {
             <IconContext.Provider value= {{ color: '#fff'}}>
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to='/ibm-demozone' >
+                        <NavLogo scrollNav = {scrollNav} to='/ibm-demozone' >
                             {/* <NavIcon src={require('../../images/drawing.svg').default} alt='ibm' /> */}
                             IBM Client Center Korea
                         </NavLogo>

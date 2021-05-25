@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from '../../images/1..JPG'
 import { useTranslation } from 'react-i18next';
-import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, ReserveButton} from './MainInfoSection.element'
+import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, buttonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
 import { FiCheckSquare } from 'react-icons/fi'
 
 const MainInfoSection = () => {
@@ -26,7 +26,10 @@ const MainInfoSection = () => {
                     <MainParagraph><FiCheckSquare /> 넘쳐나는 솔루션들..  하나의 솔루션으로 해결할 수 없나?</MainParagraph>
                     <br></br>
                     <MainParagraph>무료로 제공되는 다양한 고객 경험 프로그램으로 당신의 고민을 시원하게 해결해 드립니다.</MainParagraph>
-                    <ReserveButton>프로그램 신청하기</ReserveButton>
+                    <buttonsDiv>
+                        <ReserveButton>프로그램 신청하기</ReserveButton>
+                        <ProgramExplore>프로그램 살펴보기</ProgramExplore>
+                    </buttonsDiv>
                 </TitleTextWrapper> 
 
             </Wrapper>

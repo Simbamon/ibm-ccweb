@@ -5,7 +5,6 @@ export const InfoSec = styled.div`
     color: #fff;
     padding: 60px 0;
     background-color: #F2F4F8;
-    border-bottom: 1px solid #e6e6e6;
 `
 
 export const InfoRow = styled.div`
@@ -65,22 +64,31 @@ export const SubHeading = styled.h1 `
     color: black;
 `
 
-export const ProgramLink = styled.a `
+export const ProgramLink = styled.button`
+    background: blue;
+    white-space: nowrap;
+    height: 55px;
+    padding: 10px 25px;
+    color: #fff;
     font-size: 21px;
-    line-height: 42px;
     font-weight: bold;
-    color: blue;
-    text-decoration: none;
-    padding-bottom: 10px;
-    background: linear-gradient(blue, blue) bottom/0% 2px no-repeat;
-    transition:0.5s all;
-
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin-right: 0;
+    width: 280px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
 
     &:hover {
-        background-size: 100% 2px;
+        transition: all 0.3s ease-out;
+        transform: scale(1.1);
     }
-    
 
+    @media screen and (max-width: 768px) {
+        width: 50%;
+    }
 `
 
 export const Subtitle = styled.p `

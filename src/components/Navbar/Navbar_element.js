@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav `
-  background: white;
+  background: ${({scrollNav}) => (scrollNav ? 'white' : 'transparent')};
   height: 60px;
   display: flex;
   justify-content: center;
@@ -35,9 +35,8 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.h1`
-  color: #fff;
+  color: ${({scrollNav}) => (scrollNav ? 'black' : 'white')};;
   justify-self: flex-start;
-  color: black;
   cursor: pointer;
   text-decoration: none;
   display: flex;

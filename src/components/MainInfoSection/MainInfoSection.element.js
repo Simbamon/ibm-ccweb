@@ -96,6 +96,10 @@ export const MainParagraph = styled.p `
 
 `
 
+export const buttonsDiv = styled.div`
+  display: flex;
+`
+
 export const ReserveButton = styled.button`
     margin-top: 30px;
     background: blue;
@@ -107,7 +111,7 @@ export const ReserveButton = styled.button`
     outline: none;
     border: 2px solid blue;
     cursor: pointer;
-    margin-right: 0;
+    margin-right: 30px;
     width: 30%;
 
 
@@ -120,5 +124,24 @@ export const ReserveButton = styled.button`
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        margin-bottom: 15px;
     }
+`
+
+export const ProgramExplore = styled.a `
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+    background: linear-gradient(#fff, #fff) bottom/0% 2px no-repeat;
+    transition:0.5s all;
+
+
+    &:hover {
+        background-size: 100% 2px;
+    }
+
+    
+
 `
