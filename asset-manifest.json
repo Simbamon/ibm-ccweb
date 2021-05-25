@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.js": "/ibm-demozone/static/js/main.87952539.chunk.js",
-    "main.js.map": "/ibm-demozone/static/js/main.87952539.chunk.js.map",
+    "main.js": "/ibm-demozone/static/js/main.e6055559.chunk.js",
+    "main.js.map": "/ibm-demozone/static/js/main.e6055559.chunk.js.map",
     "runtime-main.js": "/ibm-demozone/static/js/runtime-main.0decf849.js",
     "runtime-main.js.map": "/ibm-demozone/static/js/runtime-main.0decf849.js.map",
-    "static/js/2.70bd57d5.chunk.js": "/ibm-demozone/static/js/2.70bd57d5.chunk.js",
-    "static/js/2.70bd57d5.chunk.js.map": "/ibm-demozone/static/js/2.70bd57d5.chunk.js.map",
+    "static/js/2.65c56160.chunk.js": "/ibm-demozone/static/js/2.65c56160.chunk.js",
+    "static/js/2.65c56160.chunk.js.map": "/ibm-demozone/static/js/2.65c56160.chunk.js.map",
     "index.html": "/ibm-demozone/index.html",
-    "static/js/2.70bd57d5.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.70bd57d5.chunk.js.LICENSE.txt",
+    "static/js/2.65c56160.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.65c56160.chunk.js.LICENSE.txt",
     "static/media/1..dc7841b7.JPG": "/ibm-demozone/static/media/1..dc7841b7.JPG",
     "static/media/5.jpg": "/ibm-demozone/static/media/5.66cd1a73.jpg",
-    "static/media/blog.svg": "/ibm-demozone/static/media/blog.b266f1f0.svg",
     "static/media/demo.svg": "/ibm-demozone/static/media/demo.46518297.svg",
     "static/media/getFetch.cjs": "/ibm-demozone/static/media/getFetch.d7d6010d.cjs",
-    "static/media/japan.svg": "/ibm-demozone/static/media/japan.cf431740.svg",
     "static/media/laptop.cd6f5146.jpg": "/ibm-demozone/static/media/laptop.cd6f5146.jpg",
     "static/media/meeting.svg": "/ibm-demozone/static/media/meeting.6aa66475.svg",
-    "static/media/solution.svg": "/ibm-demozone/static/media/solution.94cf9b94.svg",
-    "static/media/usa.svg": "/ibm-demozone/static/media/usa.085f6938.svg"
+    "static/media/solution.svg": "/ibm-demozone/static/media/solution.94cf9b94.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0decf849.js",
-    "static/js/2.70bd57d5.chunk.js",
-    "static/js/main.87952539.chunk.js"
+    "static/js/2.65c56160.chunk.js",
+    "static/js/main.e6055559.chunk.js"
   ]
 }
