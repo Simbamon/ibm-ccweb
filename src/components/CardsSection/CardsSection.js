@@ -46,7 +46,7 @@ const CardsSection = () => {
                             <CardInfo>
                                 <CardTitle>워크샵</CardTitle>
                                 <CardHidden>
-                                    <CardSubHeading>비지니스 고민, 전문가와 함께 해결방안을 찾아보세요!</CardSubHeading>
+                                    <CardSubHeading>비지니스 고민, 전문가와 함께<br></br> 해결방안을 찾아보세요!</CardSubHeading>
                                     {/* <CardSubHeading>{t('Cards.CardSubHeading3')}</CardSubHeading> */}
                                 </CardHidden>
                             </CardInfo>

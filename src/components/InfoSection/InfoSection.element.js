@@ -87,7 +87,10 @@ export const ProgramLink = styled.button`
     }
 
     @media screen and (max-width: 768px) {
-        width: 50%;
+        width: 60%;
+    }
+    @media screen and (max-width: 468px) {
+        width: 80%;
     }
 `
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, Container,
-         SummaryTitle, SummaryDescription, Picture, ExampleButton } from './InfoSection2.element'
+import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
+         Container, SummaryTitle, SummaryDescription, Picture, ExampleButton } from './InfoSection2.element'
 import { useTranslation } from 'react-i18next';
 import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
@@ -51,6 +51,7 @@ const InfoSection2 = () => {
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Technology Briefing</StepTitle>
+                            <StepSubTitle>기술 브리핑</StepSubTitle>
                             <Picture src={require('../../images/5.jpg').default} alt='japan'/>
                         </Flexbox1>
                         <Flexbox2>

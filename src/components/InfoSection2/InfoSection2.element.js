@@ -30,6 +30,7 @@ export const MainFlexbox = styled.div`
     align-items: center;
     justify-content:center;
     flex-direction: row;
+    background-color: pink;
 `
 
 export const Flexbox1 = styled.div`
@@ -49,7 +50,17 @@ export const StepTitle = styled.h1 `
     text-align: center;
     justify-content: center;
     align-items:center;
-    margin: 50px;
+    color: green;
+    
+
+    @media screen and (max-width: 991px) {
+        margin: 20px;
+    }
+`
+export const StepSubTitle = styled.h1 `
+    text-align: center;
+    justify-content: center;
+    align-items:center;
 
     @media screen and (max-width: 991px) {
         margin: 20px;
@@ -81,9 +92,11 @@ export const ButtonBox = styled.div`
 
 export const SummaryTitleBox = styled.div`
     flex: 1 0 100%;
-    margin: 10px;
-    align-items: center;
+    margin: auto;
+    padding-left: 40px;    
+    text-align: center;
     background-color: blue;
+    
 
     @media screen and (max-width: 1300px) {
         max-height: 200px;
@@ -105,7 +118,7 @@ export const SummaryBox = styled.div`
     padding: 40px;
     max-height: 220px;
     min-height: 220px;
-
+    background-color: yellow;
 
     @media screen and (max-width: 1300px) {
         max-height: 200px;
@@ -124,9 +137,11 @@ export const SummaryBox = styled.div`
 export const SummaryTitle = styled.h1`
     font-size: 1.52rem;
     border-bottom: 2px solid blue;
-    width: 50%;
+    width: 100%;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    background-color: yellowgreen;
+    text-align: center;
 
     @media screen and (max-width: 991px) {
         width: 100%;
@@ -166,6 +181,7 @@ export const ExampleButton = styled.button`
     
     &:focus {
         background: blue;
+        color: white;
     }
     &:hover {
         transition: all 0.3s ease-out;

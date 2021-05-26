@@ -66,6 +66,10 @@ export const TitleCard = styled.div `
   line-height: 50px;
   font-size: 1.2rem;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 0.9rem;
+  }
+
   @media screen and (max-width: 960px) {
     font-size: 0.9rem;
   }
@@ -90,7 +94,7 @@ export const Cards = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    width: 100vw;
+    width: 100%;
     margin: 25px;
     &:hover {
       transform: none;
@@ -145,7 +149,7 @@ export const CardTitle = styled.h1`
     color: #fff;
     font-size: 2.3rem;
     text-align: center;
-    vertical-align: middle;
+    margin-top: 35px;
     
 
 `
@@ -158,8 +162,9 @@ export const CardImg = styled.img`
 export const CardSubHeading = styled.p`
     color: #fff;
     margin-bottom: 10px;
-    font-size: 0.875rem;
-    margin-top: 25px;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-top: 20px;
     text-align: center;
     
 
