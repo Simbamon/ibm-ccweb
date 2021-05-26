@@ -1,6 +1,6 @@
 import React from 'react'
 import { InfoOne, InfoTwo, InfoThree } from './Data'
-import { InfoSection, InfoSection2, InfoSection3, MainInfoSection, CardsSection } from '../../components'
+import { InfoSection, TechonologyBriefing, ExperienceDay, Discovery, MainInfoSection, CardsSection } from '../../components'
 
 
 const Home = () => {
@@ -10,7 +10,9 @@ const Home = () => {
             <InfoSection {...InfoOne} />
             
             <CardsSection />
-            <InfoSection2 />
+            <TechonologyBriefing />
+            <ExperienceDay />
+            <Discovery />
             {/* <InfoSection3 {...InfoThree} />
             <InfoSection2 {...InfoTwo} /> */}
             

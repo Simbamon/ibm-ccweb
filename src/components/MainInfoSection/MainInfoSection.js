@@ -3,6 +3,7 @@ import Img from '../../images/1..JPG'
 import { useTranslation } from 'react-i18next';
 import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, buttonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
 import { FiCheckSquare } from 'react-icons/fi'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const MainInfoSection = () => {
     const { t } = useTranslation(); 
@@ -28,7 +29,18 @@ const MainInfoSection = () => {
                     <MainParagraph>무료로 제공되는 다양한 고객 경험 프로그램으로 당신의 고민을 시원하게 해결해 드립니다.</MainParagraph>
                     <buttonsDiv>
                         <ReserveButton>프로그램 신청하기</ReserveButton>
-                        <ProgramExplore>프로그램 살펴보기</ProgramExplore>
+                        <ProgramExplore>
+                            <Link
+                                activeClass="active"
+                                to="program"
+                                spy={true}
+                                smooth={true}
+                                offset={-60}
+                                duration={500}
+                            >
+                            프로그램 살펴보기
+                            </Link>
+                        </ProgramExplore>
                     </buttonsDiv>
                 </TitleTextWrapper> 
 

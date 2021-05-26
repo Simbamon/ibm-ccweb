@@ -102,14 +102,14 @@ export const buttonsDiv = styled.div`
 
 export const ReserveButton = styled.button`
     margin-top: 30px;
-    background: blue;
+    background: #0062FF;
     white-space: nowrap;
     padding: 10px 25px;
     color: #fff;
     font-size: 13px;
     font-weight: bold;
     outline: none;
-    border: 2px solid blue;
+    border: none;
     cursor: pointer;
     margin-right: 30px;
     width: 30%;
@@ -117,7 +117,7 @@ export const ReserveButton = styled.button`
 
     &:hover {
         transition: all 0.3s ease-out;
-        border: 2px solid white;
+        border: none;
         background: white;
         color: black;
     }

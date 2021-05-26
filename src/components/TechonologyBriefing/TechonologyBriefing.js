@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
-         Container, SummaryTitle, SummaryDescription, Picture, ExampleButton } from './InfoSection2.element'
+         Container, SummaryTitle, SummaryDescription, Picture, ExampleButton } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
 import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
 
-const InfoSection2 = () => {
+const TechonologyBriefing = () => {
     const { t } = useTranslation();
 
     const [State, setState] = useState({
@@ -46,13 +46,13 @@ const InfoSection2 = () => {
     
     return (
         <>
-            <BackgroundSection>
+            <BackgroundSection id="tb">
                 <Container>
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Technology Briefing</StepTitle>
                             <StepSubTitle>기술 브리핑</StepSubTitle>
-                            <Picture src={require('../../images/5.jpg').default} alt='japan'/>
+                            <Picture src={require('../../images/tbpic.png').default} alt='japan'/>
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>
@@ -61,16 +61,23 @@ const InfoSection2 = () => {
                                 <ExampleButton onClick={changeCN}>Cloud Native Tech Briefing</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
-                                <SummaryDescription>{taIntro}</SummaryDescription>
+                                <SummaryDescription >{taIntro}</SummaryDescription>
                             </SummaryTitleBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 구성</SummaryTitle>
-                                <SummaryDescription>{taConfig}</SummaryDescription>
-                                
+                                <SummaryDescription>
+                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                        {taConfig}
+                                    </div>
+                                </SummaryDescription>
                             </SummaryBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 안내</SummaryTitle>
-                                <SummaryDescription>{taGuide}</SummaryDescription>
+                                <SummaryDescription>
+                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                        {taGuide}
+                                    </div>        
+                                </SummaryDescription>
                             </SummaryBox>
                         </Flexbox2>
                     </MainFlexbox>
@@ -82,4 +89,4 @@ const InfoSection2 = () => {
     )
 }
 
-export default InfoSection2
+export default TechonologyBriefing

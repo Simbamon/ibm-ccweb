@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { FaFileDownload } from 'react-icons/fa'
 
 export const InfoSec = styled.div`
     color: #fff;
@@ -65,7 +65,7 @@ export const SubHeading = styled.h1 `
 `
 
 export const ProgramLink = styled.button`
-    background: blue;
+    background: #0062FF;
     white-space: nowrap;
     height: 55px;
     padding: 10px 25px;
@@ -94,11 +94,13 @@ export const ProgramLink = styled.button`
     }
 `
 
+export const Icon = styled(FaFileDownload)`
+`
+
 export const Subtitle = styled.p `
     max-width: 100%;
     margin-top: 16px;
-    margin-bottom: 10px;
-    font-size: 21px;
+    font-size: 23px;
     line-height: 35px;
     color: black;
     white-space: pre-line;

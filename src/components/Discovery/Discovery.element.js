@@ -12,9 +12,10 @@ export const Container = styled.div `
     max-width: 100vw;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 10vw;
-    padding-left: 10vw;
-    margin-bottom: 100px;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    margin-bottom: 30px;
+    margin-top: 30px;
     
 
     @media screen and (max-width: 991px) {
@@ -30,7 +31,6 @@ export const MainFlexbox = styled.div`
     align-items: center;
     justify-content:center;
     flex-direction: row;
-    background-color: pink;
 `
 
 export const Flexbox1 = styled.div`
@@ -38,7 +38,6 @@ export const Flexbox1 = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    display: flex;
 
     @media screen and (max-width: 991px) {
         flex: 1 1 100%;
@@ -50,7 +49,9 @@ export const StepTitle = styled.h1 `
     text-align: center;
     justify-content: center;
     align-items:center;
-    color: green;
+    color: #D12765;
+    font-size: 2.5rem;
+    font-style: italic;
     
 
     @media screen and (max-width: 991px) {
@@ -61,6 +62,8 @@ export const StepSubTitle = styled.h1 `
     text-align: center;
     justify-content: center;
     align-items:center;
+    font-size: 1.7;
+    margin: 10px;
 
     @media screen and (max-width: 991px) {
         margin: 20px;
@@ -93,13 +96,14 @@ export const ButtonBox = styled.div`
 export const SummaryTitleBox = styled.div`
     flex: 1 0 100%;
     margin: auto;
-    padding-left: 40px;    
+    padding: 40px;    
     text-align: center;
-    background-color: blue;
+    min-height: 145px;
+    max-height: 100%;
     
 
     @media screen and (max-width: 1300px) {
-        max-height: 200px;
+        max-height: 250px;
     }
 
     @media screen and (max-width: 991px) {
@@ -113,19 +117,16 @@ export const SummaryTitleBox = styled.div`
 `
 
 export const SummaryBox = styled.div`
-    flex: 1 0 calc(50% - 10px);
-    background-color: transparent;
+    flex: 1 0 calc(50% - 50px);
+    background-color: #e6e6e6;
     padding: 40px;
-    max-height: 220px;
-    min-height: 220px;
-    background-color: yellow;
+    max-height: 280px;
+    min-height: 280px;
 
-    @media screen and (max-width: 1300px) {
-        max-height: 200px;
-    }
 
     @media screen and (max-width: 991px) {
         flex: 1 0 calc(100% - 10px);
+        min-height: 100%;
         display: flex;
         padding: 40px;
         flex-direction: column;
@@ -135,59 +136,65 @@ export const SummaryBox = styled.div`
 `
 
 export const SummaryTitle = styled.h1`
-    font-size: 1.52rem;
-    border-bottom: 2px solid blue;
+    font-size: 1.7rem;
     width: 100%;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    background-color: yellowgreen;
     text-align: center;
-
+    color: #D12765;
+    padding:auto;
     @media screen and (max-width: 991px) {
         width: 100%;
     }
 `
 
 export const SummaryDescription = styled.p`
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     white-space: pre-wrap;
-    width: 80%;
+    width: 100%;
+    text-align: center;
 `
 
 export const Picture = styled.img`
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 100%;
 
     @media screen and (max-width: 991px) {
-        width: 100%;
     }
 
 `
 
-export const ExampleButton = styled.button`
+export const ExampleButton = styled.a`
     background: white;
     white-space: nowrap;
     padding: 10px 25px;
     color: black;
     font-weight: bold; 
-    font-size: 13.5px;
+    font-size: 1.4rem;
+    text-align: center;
     outline: none;
     border: 0;
     cursor: pointer;
     margin-right: 0;
     width: 33%;
     height: 100%;
-    
+    background: linear-gradient(#D12765, #D12765) bottom/0% 2px no-repeat;
+    transition:0.5s all;
+
+
+    &:hover {
+        background-size: 100% 2px;
+    }
     &:focus {
         background: blue;
         color: white;
     }
-    &:hover {
+    /* &:hover {
         transition: all 0.3s ease-out;
         background: blue;
         color:white;
-    }
+    } */
 
     @media screen and (max-width: 1000px) {
         width: 100%;

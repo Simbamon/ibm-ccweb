@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardSection = styled.div`
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -57,14 +57,14 @@ export const TitleCard = styled.div `
 	height: 50px;
 	width: 60%;
   transform: translate(-50%, -50%);
-	background-color: green;
+	background-color: #017D79;
   border-radius: 20px;
 	text-align: center;
   color: white;
   font-weight: bold;
   flex-wrap: wrap;
   line-height: 50px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 
   @media screen and (max-width: 1200px) {
     font-size: 0.9rem;
