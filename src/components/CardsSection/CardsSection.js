@@ -14,7 +14,7 @@ const CardsSection = () => {
                     <CardsContainer>
                     
                         
-                            <Cards to='/' img = {"https://380342-1192392-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/briefing-no-desenvolvimento-de-projetos-696x464.jpg"}>
+                            <Cards img = {require('../../images/tb.jpg').default} alt='techonology briefing'>
                                 <Link
                                     activeClass="active"
                                     to="tb"
@@ -37,7 +37,7 @@ const CardsSection = () => {
                             </Cards>
                         
                         
-                        <Cards to='/' img = {"https://cdn.techinasia.com/wp-content/uploads/2016/03/mox-demo-day-2016-a-crowd.jpg"}>
+                        <Cards img = {require('../../images/ed.jpg').default} alt='experience day'>
                             <Link
                                 activeClass="active"
                                 to="ed"
@@ -60,7 +60,7 @@ const CardsSection = () => {
                            
                         
                        
-                        <Cards img = {"https://i.pinimg.com/originals/5a/0b/d7/5a0bd7df42e79dc2ce5024a9d6d67da7.jpg"}>
+                        <Cards img = {require('../../images/dw.jpg').default} alt='discovery workshop'>
                             <Link
                                 activeClass="active"
                                 to="dw"

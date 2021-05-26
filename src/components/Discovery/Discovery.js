@@ -15,15 +15,27 @@ const Discovery = () => {
 
     })
 
+    const [clicked, setClicked] = useState({
+        lclicked: true,
+        gClicked: false,
+    })
+
     const taIntro = State.taIntro
     const taConfig = State.taConfig
     const taGuide = State.taGuide
+    const lclicked = clicked.lclicked
+    const gClicked = clicked.gClicked
+
 
     function changeDA() {
         setState({
             taIntro: t('DigitalJourney.DAIIntro'),
             taConfig: t('DigitalJourney.DAIConfig'),
             taGuide: t('DigitalJourney.DAIGuide'),
+        })
+        setClicked({
+            lclicked: true,
+            gClicked: false,
         })
     }
 
@@ -32,6 +44,10 @@ const Discovery = () => {
             taIntro: t('DigitalJourney.OHIntro'),
             taConfig: t('DigitalJourney.OHConfig'),
             taGuide: t('DigitalJourney.OHGuide'),
+        })
+        setClicked({
+            lclicked: false,
+            gClicked: true,
         })
     }
 
@@ -48,8 +64,8 @@ const Discovery = () => {
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeDA}>Ladder to AI Workshop</ExampleButton>
-                                <ExampleButton onClick={changeOH}>Garage (유로)</ExampleButton>
+                                <ExampleButton onClick={changeDA} className={lclicked ? 'active': ''}>Ladder to AI Workshop</ExampleButton>
+                                <ExampleButton onClick={changeOH} className={gClicked ? 'active': ''}>Garage (유료)</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>

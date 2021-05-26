@@ -183,18 +183,12 @@ export const ExampleButton = styled.a`
     transition:0.5s all;
 
 
+    &.active{
+        background-color:red;
+    }
     &:hover {
         background-size: 100% 2px;
     }
-    &:focus {
-        background: blue;
-        color: white;
-    }
-    /* &:hover {
-        transition: all 0.3s ease-out;
-        background: blue;
-        color:white;
-    } */
 
     @media screen and (max-width: 1000px) {
         width: 100%;

@@ -183,6 +183,9 @@ export const ExampleButton = styled.a`
     transition:0.5s all;
 
 
+    &.active{
+        background-color:red;
+    }
     &:hover {
         background-size: 100% 2px;
     }

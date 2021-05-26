@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, Picture, ExampleButton } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
-import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
 
 const TechonologyBriefing = () => {
@@ -15,9 +14,18 @@ const TechonologyBriefing = () => {
 
     })
 
+    const [clicked, setClicked] = useState({
+        daClicked: true,
+        ohClicked: false,
+        cnClicked: false,
+    })
+
     const taIntro = State.taIntro
     const taConfig = State.taConfig
     const taGuide = State.taGuide
+    const daClicked = clicked.daClicked
+    const ohClicked = clicked.ohClicked
+    const cnClicked = clicked.cnClicked
 
     function changeDA() {
         setState({
@@ -25,6 +33,11 @@ const TechonologyBriefing = () => {
             taConfig: t('DigitalJourney.DAIConfig'),
             taGuide: t('DigitalJourney.DAIGuide'),
         })
+        setClicked({ 
+            daClicked: true,
+            ohClicked: false,
+            cnClicked: false,
+        });
     }
 
     function changeOH() {
@@ -33,6 +46,11 @@ const TechonologyBriefing = () => {
             taConfig: t('DigitalJourney.OHConfig'),
             taGuide: t('DigitalJourney.OHGuide'),
         })
+        setClicked({ 
+            daClicked: false,
+            ohClicked: true,
+            cnClicked: false,
+        });
     }
 
     function changeCN() {
@@ -41,6 +59,11 @@ const TechonologyBriefing = () => {
             taConfig: t('DigitalJourney.CNConfig'),
             taGuide: t('DigitalJourney.CNGuide'),
         })
+        setClicked({ 
+            daClicked: false,
+            ohClicked: false,
+            cnClicked: true,
+        });
     }
 
     
@@ -56,9 +79,9 @@ const TechonologyBriefing = () => {
                         </Flexbox1>
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeDA}>Data <span>&#38;</span> AI Briefing</ExampleButton>
-                                <ExampleButton onClick={changeOH}>Open Hybrid Cloud Briefing</ExampleButton>
-                                <ExampleButton onClick={changeCN}>Cloud Native Tech Briefing</ExampleButton>
+                                <ExampleButton onClick={changeDA} className={daClicked ? 'active': ''}>Data <span>&#38;</span> AI Briefing</ExampleButton>
+                                <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Open Hybrid Cloud Briefing</ExampleButton>
+                                <ExampleButton onClick={changeCN} className={cnClicked ? 'active': ''}>Cloud Native Tech Briefing</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>

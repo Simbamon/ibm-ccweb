@@ -1,5 +1,4 @@
 import React from 'react'
-import { InfoOne, InfoTwo, InfoThree } from './Data'
 import { InfoSection, TechonologyBriefing, ExperienceDay, Discovery, MainInfoSection, CardsSection } from '../../components'
 
 
@@ -7,7 +6,7 @@ const Home = () => {
     return (
         <>
             <MainInfoSection />
-            <InfoSection {...InfoOne} />
+            <InfoSection />
             
             <CardsSection />
             <TechonologyBriefing />
