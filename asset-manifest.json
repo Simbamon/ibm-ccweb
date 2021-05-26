@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.js": "/ibm-demozone/static/js/main.249dcaa3.chunk.js",
-    "main.js.map": "/ibm-demozone/static/js/main.249dcaa3.chunk.js.map",
+    "main.js": "/ibm-demozone/static/js/main.cf7251f5.chunk.js",
+    "main.js.map": "/ibm-demozone/static/js/main.cf7251f5.chunk.js.map",
     "runtime-main.js": "/ibm-demozone/static/js/runtime-main.0decf849.js",
     "runtime-main.js.map": "/ibm-demozone/static/js/runtime-main.0decf849.js.map",
-    "static/js/2.65c56160.chunk.js": "/ibm-demozone/static/js/2.65c56160.chunk.js",
-    "static/js/2.65c56160.chunk.js.map": "/ibm-demozone/static/js/2.65c56160.chunk.js.map",
+    "static/js/2.3297b34e.chunk.js": "/ibm-demozone/static/js/2.3297b34e.chunk.js",
+    "static/js/2.3297b34e.chunk.js.map": "/ibm-demozone/static/js/2.3297b34e.chunk.js.map",
     "index.html": "/ibm-demozone/index.html",
-    "static/js/2.65c56160.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.65c56160.chunk.js.LICENSE.txt",
+    "static/js/2.3297b34e.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.3297b34e.chunk.js.LICENSE.txt",
     "static/media/1..dc7841b7.JPG": "/ibm-demozone/static/media/1..dc7841b7.JPG",
-    "static/media/5.jpg": "/ibm-demozone/static/media/5.66cd1a73.jpg",
-    "static/media/demo.svg": "/ibm-demozone/static/media/demo.46518297.svg",
+    "static/media/dw.jpg": "/ibm-demozone/static/media/dw.7b1d19b2.jpg",
+    "static/media/dwpic.png": "/ibm-demozone/static/media/dwpic.7f0bd5a6.png",
+    "static/media/ed.jpg": "/ibm-demozone/static/media/ed.d6e8486a.jpg",
+    "static/media/edpic.png": "/ibm-demozone/static/media/edpic.4df7d0aa.png",
     "static/media/getFetch.cjs": "/ibm-demozone/static/media/getFetch.d7d6010d.cjs",
     "static/media/laptop.cd6f5146.jpg": "/ibm-demozone/static/media/laptop.cd6f5146.jpg",
-    "static/media/meeting.svg": "/ibm-demozone/static/media/meeting.6aa66475.svg",
-    "static/media/solution.svg": "/ibm-demozone/static/media/solution.94cf9b94.svg"
+    "static/media/tb.jpg": "/ibm-demozone/static/media/tb.8a41a900.jpg",
+    "static/media/tbpic.png": "/ibm-demozone/static/media/tbpic.f5b889d0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0decf849.js",
-    "static/js/2.65c56160.chunk.js",
-    "static/js/main.249dcaa3.chunk.js"
+    "static/js/2.3297b34e.chunk.js",
+    "static/js/main.cf7251f5.chunk.js"
   ]
 }
