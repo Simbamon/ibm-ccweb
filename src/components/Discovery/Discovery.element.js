@@ -184,10 +184,10 @@ export const ExampleButton = styled.a`
 
 
     &.active{
-        background-color:red;
+        background-size: 40% 2px;
     }
     &:hover {
-        background-size: 100% 2px;
+        background-size: 40% 2px;
     }
 
     @media screen and (max-width: 1000px) {

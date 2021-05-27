@@ -9,6 +9,7 @@ export const BackgroundSection = styled.div`
 export const Container = styled.div `
     z-index: 1;
     width: 100%;
+    height: 75vh;
     max-width: 100vw;
     margin-right: auto;
     margin-left: auto;
@@ -184,10 +185,10 @@ export const ExampleButton = styled.a`
 
 
     &.active{
-        background-color:red;
+        background-size: 40% 2px;
     }
     &:hover {
-        background-size: 100% 2px;
+        background-size: 40% 2px;
     }
     &:focus {
         background: blue;

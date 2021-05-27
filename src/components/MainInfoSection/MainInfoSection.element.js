@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FiCheckSquare } from 'react-icons/fi'
 
 export const BackgroundVid = styled.div `
     position: absolute;
@@ -126,6 +127,11 @@ export const ReserveButton = styled.button`
         width: 100%;
         margin-bottom: 15px;
     }
+`
+export const Icon = styled(FiCheckSquare)`
+    font-size: 23px;
+    margin-right: 7px;
+    vertical-align: middle;
 `
 
 export const ProgramExplore = styled.a `

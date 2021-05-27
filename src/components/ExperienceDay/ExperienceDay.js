@@ -78,7 +78,7 @@ const ExperienceDay = () => {
                             <ButtonBox>
                                 <ExampleButton onClick={changeDA} className={dsClicked ? 'active': ''}>Data Science</ExampleButton>
                                 <ExampleButton onClick={changeOH} className={wdClicked ? 'active' : ''}>Watson Discovery</ExampleButton>
-                                <ExampleButton onClick={changeCN} className={amClicked ? 'active' : ''}>Application Modernization</ExampleButton>
+                                <ExampleButton onClick={changeCN} className={amClicked ? 'active' : ''}>App Modernization</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>
