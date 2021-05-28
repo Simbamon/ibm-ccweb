@@ -8,7 +8,7 @@ export const BackgroundVid = styled.div `
     bottom: 0;
     left: 0;
     max-width: 100%;
-    height: 70%;
+    height: 75vh;
     overflow: hidden;
     background-image: 
     url(${props => props.img});
@@ -28,7 +28,7 @@ export const Wrapper = styled.div `
     justify-content: flex-start;
     max-width: 100%;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
     min-height: -webkit-fill-available;
 
     margin-right: auto;
@@ -65,7 +65,8 @@ export const MainTitle = styled.h1 `
     color: #fff;
     font-size: 2rem;
     text-align: left;
-    margin-bottom: 15px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 768px) {
         font-size: 1rem;
