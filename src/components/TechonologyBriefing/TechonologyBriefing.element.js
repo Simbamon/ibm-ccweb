@@ -112,7 +112,7 @@ export const ButtonBox = styled.div`
 export const SummaryTitleBox = styled.div`
     flex: 1 0 100%;
     margin: auto;
-    padding-top: 40px;    
+    padding-top: 20px;    
     text-align: center;
     min-height: 145px;
     max-height: 100%;
@@ -152,7 +152,7 @@ export const SummaryBox = styled.div`
 `
 
 export const SummaryTitle = styled.h1`
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     width: 100%;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -166,7 +166,7 @@ export const SummaryTitle = styled.h1`
 
 export const SummaryDescription = styled.p`
     font-size: 0.93rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     white-space: pre-wrap;
     width: 100%;
     text-align: center;
@@ -174,7 +174,7 @@ export const SummaryDescription = styled.p`
 `
 export const SummaryDescriptionHash = styled.p`
     font-size: 0.93rem;
-    line-height: 1.2rem;
+    line-height: 2.1rem;
     white-space: pre-wrap;
     width: 100%;
     text-align: center;
