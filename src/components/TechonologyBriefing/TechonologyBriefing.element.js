@@ -44,6 +44,7 @@ export const Flexbox1 = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-right: 100px;
 
     @media screen and (max-width: 991px) {
         flex: 1 1 100%;
@@ -55,7 +56,7 @@ export const StepTitle = styled.h1 `
     flex: 1 0 100%;
     margin: auto;
     padding-top: 20px;
-    padding-bottom: 20px;    
+    margin-bottom: 20px;
     text-align: center;
     color: #017D79;
     font-size: 2.5rem;
@@ -64,6 +65,7 @@ export const StepTitle = styled.h1 `
 export const StepSubTitle = styled.h1 `
     text-align: center;
     justify-content: center;
+    padding-bottom: 55px;
     align-items:center;
     font-size: 1.7;
     margin: 10px;
@@ -71,6 +73,17 @@ export const StepSubTitle = styled.h1 `
     @media screen and (max-width: 991px) {
         margin: 20px;
     }
+`
+
+export const Picture = styled.img`
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 500px;
+
+    @media screen and (max-width: 991px) {
+    }
+
 `
 
 export const Flexbox2 = styled.div`
@@ -168,25 +181,13 @@ export const SummaryDescriptionHash = styled.p`
     color: blue;
 `
 
-
-export const Picture = styled.img`
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-height: 500px;
-
-    @media screen and (max-width: 991px) {
-    }
-
-`
-
 export const ExampleButton = styled.a`
     background: white;
     white-space: nowrap;
     padding: 10px 25px;
     color: black;
     font-weight: bold; 
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: center;
     outline: none;
     border: 0;

@@ -26,6 +26,7 @@ export const NavbarContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding-left: 50px;
+  padding-right: 20px;
 
   @media screen and (max-width: 991px) {
       padding-right: 30px;
@@ -97,10 +98,6 @@ export const NavItem = styled.li`
   height: 60px;
   border-bottom: 2px solid transparent;
   line-height: 15px;
-  
-  &:hover {
-    border-bottom: 2px solid #fff;
-  }
 
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -180,10 +177,13 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const ReserveButton = styled.button`
-    background: blue;
+    background: ${({scrollNav}) => (scrollNav ? 'blue' : 'transparent')};
     white-space: nowrap;
-    height: 60px;
-    padding: 10px 25px;
+    height: 40px;
+    padding: 5px 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -192,10 +192,10 @@ export const ReserveButton = styled.button`
     cursor: pointer;
     margin-right: 0;
     width: 100%;
-
+    border: 2px solid white;
     &:hover {
         transition: all 0.3s ease-out;
-        border: 0px;
+        border: 2px solid blue;
         background: white;
         color: black;
     }

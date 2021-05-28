@@ -48,7 +48,7 @@ const Navbar = () => {
                             <NavItem>
                             </NavItem>
                             <NavItem>
-                                <ReserveButton>RESERVATION</ReserveButton>
+                                <ReserveButton scrollNav = {scrollNav}>프로그램 신청하기</ReserveButton>
                             </NavItem>
 
                             <NavBottom>
