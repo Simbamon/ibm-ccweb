@@ -49,6 +49,7 @@ export const Flexbox1 = styled.div`
     @media screen and (max-width: 991px) {
         flex: 1 1 100%;
         margin-left: 0px;
+        padding-right: 0px;
     }
 `
 
@@ -82,6 +83,8 @@ export const Picture = styled.img`
     max-height: 500px;
 
     @media screen and (max-width: 991px) {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 `
@@ -137,10 +140,10 @@ export const SummaryBox = styled.div`
     background-color: #e6e6e6;
     padding: 40px;
     max-height: 100%;
-    min-height: 280px;
+    min-height: 310px;
 
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1600px) {
         flex: 1 0 calc(100% - 10px);
         min-height: 100%;
         display: flex;
@@ -178,7 +181,7 @@ export const SummaryDescriptionHash = styled.p`
     white-space: pre-wrap;
     width: 100%;
     text-align: center;
-    color: blue;
+    color: #0062FF;
 `
 
 export const ExampleButton = styled.a`
@@ -209,11 +212,6 @@ export const ExampleButton = styled.a`
         background: blue;
         color: white;
     }
-    /* &:hover {
-        transition: all 0.3s ease-out;
-        background: blue;
-        color:white;
-    } */
 
     @media screen and (max-width: 1000px) {
         width: 100%;

@@ -1,18 +1,25 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
-         Container, SummaryTitle, SummaryDescription, Picture, ExampleButton } from './ExperienceDay.element'
+         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './ExperienceDay.element'
 import { useTranslation } from 'react-i18next';
-import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
 
 const ExperienceDay = () => {
     const { t } = useTranslation();
 
     const [State, setState] = useState({
-        taIntro: t('DigitalJourney.DAIIntro'),
-        taConfig: t('DigitalJourney.DAIConfig'),
-        taGuide: t('DigitalJourney.DAIGuide'),
-
+        taIntro: t('DigitalJourney.DSIntro'),
+        taHashtag: t('DigitalJourney.DSHashtag'),
+        taConfig: <ul>
+                    <li>효과적인 데이터 소스 관리를 위한 가상화 방법 알아보기</li>
+                    <li>필요한 데이터를 좀 더 쉽게 찾아보자!  카탈로그 사용법 익히기</li>
+                    <li>딱 맞는 머신러닝 모델, 쉽고 빠르게 개발하고 적용해 보기 </li>
+                    <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기 </li>
+                </ul>,
+        taGuide: <ul>
+                    <li>대상: 데이터 엔지니어, 데이터 사이언티스트, 데이터 아키텍트, 데이터를 활용하는 앱 개발자 등 머신 러닝 및 AI 에 관심있는 누구나 가능</li>
+                    <li>소요 시간: 1일</li>
+                </ul>,
     })
 
     const [clicked, setClicked] = useState({
@@ -25,15 +32,25 @@ const ExperienceDay = () => {
     const taIntro = State.taIntro
     const taConfig = State.taConfig
     const taGuide = State.taGuide
+    const taHashtag = State.taHashtag
     const dsClicked = clicked.dsClicked
     const wdClicked = clicked.wdClicked
     const amClicked = clicked.amClicked
 
-    function changeDA(e) {
+    function changeDS() {
         setState({
             taIntro: t('DigitalJourney.DAIIntro'),
-            taConfig: t('DigitalJourney.DAIConfig'),
-            taGuide: t('DigitalJourney.DAIGuide'),
+            taHashtag: t('DigitalJourney.DSHashtag'),
+            taConfig: <ul>
+                        <li>효과적인 데이터 소스 관리를 위한 가상화 방법 알아보기</li>
+                        <li>필요한 데이터를 좀 더 쉽게 찾아보자!  카탈로그 사용법 익히기</li>
+                        <li>딱 맞는 머신러닝 모델, 쉽고 빠르게 개발하고 적용해 보기</li>
+                        <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기 </li>
+                    </ul>,
+            taGuide: <ul>
+                        <li>대상: 데이터 엔지니어, 데이터 사이언티스트, 데이터 아키텍트, 데이터를 활용하는 앱 개발자 등 머신 러닝 및 AI 에 관심있는 누구나 가능</li>
+                        <li>소요 시간: 1일</li>
+                    </ul>,
         })
         setClicked({ 
             dsClicked: true,
@@ -42,11 +59,21 @@ const ExperienceDay = () => {
         });
     }
 
-    function changeOH() {
+    function changeWD() {
         setState({
-            taIntro: t('DigitalJourney.OHIntro'),
-            taConfig: t('DigitalJourney.OHConfig'),
-            taGuide: t('DigitalJourney.OHGuide'),
+            taIntro: <p>콜 로그 분석,  마켓 분석,  고객 요구 분석,  기술 문서 분석을 위해 수집된 데이터의 공통점은?<br></br>
+            바로 <span style={{color: "#0062FF", fontWeight: "600"}}>비정형 데이터</span> 라는 점 입니다. 어렵지 않은 비정형데이터의 분석을 직접 경험해 보세요.</p>,
+            taHashtag: t('DigitalJourney.WDHashtag'),
+            taConfig: <ul>
+                        <li>비정형 데이터 분석의 기본 개념 살펴 보기</li>
+                        <li>효율적인 데이터 분석, 사례로 이해해 보기</li>
+                        <li>분석의 기반 기술 및 플랫폼에 대해 알아 보기</li>
+                        <li>실습을 통해 분석 과정과 결과 알아 보기</li>
+                    </ul>,
+            taGuide: <ul>
+                        <li>대상: 비정형 데이터를 다루는 현업, IT 팀, 앱 개발자, 아키텍트 등</li>
+                        <li>소요 시간: 4시간</li>
+                    </ul>,
         })
         setClicked({ 
             dsClicked: false,
@@ -55,11 +82,19 @@ const ExperienceDay = () => {
         });
     }
 
-    function changeCN() {
+    function changeAM() {
         setState({
-            taIntro: t('DigitalJourney.CNIntro'),
-            taConfig: t('DigitalJourney.CNConfig'),
-            taGuide: t('DigitalJourney.CNGuide'),
+            taIntro: t('DigitalJourney.AMIntro'),
+            taHashtag: t('DigitalJourney.AMHashtag'),
+            taConfig: <ul>
+                        <li>앱 현대화란 무엇인가 알아보기</li>
+                        <li>앱 현대화의 기반 기술 이해해 보기</li>
+                        <li>앱 현대화를 위한 쉽고 빠른 가이드 솔루션 경험해 보기</li>
+                    </ul>,
+            taGuide: <ul>
+                        <li>대상: IT 담당자, 전략 기획 담당자, 프로젝트 매니저, 앱 개발자 등</li>
+                        <li>소요 시간: 1일</li>
+                    </ul>,
         })
         setClicked({ 
             dsClicked: false,
@@ -76,12 +111,13 @@ const ExperienceDay = () => {
                     <MainFlexbox>                     
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeDA} className={dsClicked ? 'active': ''}>Data Science</ExampleButton>
-                                <ExampleButton onClick={changeOH} className={wdClicked ? 'active' : ''}>Watson Discovery</ExampleButton>
-                                <ExampleButton onClick={changeCN} className={amClicked ? 'active' : ''}>App Modernization</ExampleButton>
+                                <ExampleButton onClick={changeDS} className={dsClicked ? 'active': ''}>Data Science</ExampleButton>
+                                <ExampleButton onClick={changeWD} className={wdClicked ? 'active' : ''}>Watson Discovery</ExampleButton>
+                                <ExampleButton onClick={changeAM} className={amClicked ? 'active' : ''}>App Modernization</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>
+                                <SummaryDescriptionHash>{taHashtag}</SummaryDescriptionHash>
                             </SummaryTitleBox>
                             <SummaryBox>
                                 <SummaryTitle>프로그램 구성</SummaryTitle>

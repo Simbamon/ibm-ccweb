@@ -88,10 +88,6 @@ const Footer = () => {
                         </div>
                         
                     </FooterLogoWrapper>
-                    <FooterSubscription>
-                        <FooterLanguage onClick={()=>handleClick('ko')}>한국어</FooterLanguage>              
-                        <FooterLanguage onClick={()=>handleClick('en')}>English</FooterLanguage>
-                    </FooterSubscription>
                 </FooterBottom>
             </FooterDiv>
         </FooterContainer>
