@@ -1,22 +1,12 @@
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import React from 'react'
-import { BsNewspaper } from 'react-icons/bs'
-import { FooterContainer, FooterDiv, FooterSubscription , FooterLanguage, FooterLinkLine, FormInput, FormButton, FooterForm,
-        FooterLinksContainer, FooterLinkWrapper, FooterLinksItems,FooterLinkTitle, FooterContents, FooterContentsLink,
-        SocialIcons, SocialIconLink, FooterBottom, FooterLogoWrapper, FooterLogoImage, FooterLogoImageCopyright } from './Footer.element'
+import { FooterContainer, FooterDiv, FooterLinkLine, FooterLinksContainer, FooterLinkWrapper, FooterLinksItems,FooterLinkTitle, FooterContents,
+        FooterBottom, FooterLogoWrapper, FooterLogoImage, FooterLogoImageCopyright } from './Footer.element'
 
 
 const Footer = () => {
 
-    const { t, i18n } = useTranslation();
-
-    useEffect(
-        () => {
-            window.scrollTo(0, 0);
-        },
-        []
-    );
+    const { t } = useTranslation();
 
     return (
         <FooterContainer>

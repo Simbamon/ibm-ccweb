@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
-import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 const TechonologyBriefing = () => {
     const { t } = useTranslation();
@@ -109,13 +109,18 @@ const TechonologyBriefing = () => {
         <>
             <BackgroundSection id="tb">
                 <Container>
+                    <Zoom>
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Technology Briefing</StepTitle>
                             <StepSubTitle>기술 브리핑</StepSubTitle>
                             <Picture src={require('../../images/tbpic.svg').default} alt='japan'/>
+                         
                         </Flexbox1>
+                        
+                        
                         <Flexbox2>
+                            
                             <ButtonBox>
                                 <ExampleButton onClick={changeDA} className={daClicked ? 'active': ''}>Data <span>&#38;</span> AI Briefing</ExampleButton>
                                 <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Open Hybrid Cloud Briefing</ExampleButton>
@@ -146,7 +151,9 @@ const TechonologyBriefing = () => {
                                 </SummaryBoxContainer>
                             </div>
                         </Flexbox2>
+                        
                     </MainFlexbox>
+                    </Zoom>
                 </Container>
                     
             </BackgroundSection>

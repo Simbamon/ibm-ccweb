@@ -2,6 +2,7 @@ import React from 'react'
 import Img from '../../images/1..JPG'
 import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, Icon, ButtonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
 import { Link } from "react-scroll";
+import Fade from 'react-reveal/Fade'
 
 const MainInfoSection = () => {
 
@@ -11,11 +12,10 @@ const MainInfoSection = () => {
             <Wrapper>
                 
                 
+
+                
                 <TitleTextWrapper>
-                    {/* <MainTitle>{t('MainHome.Title1')}</MainTitle>
-                    <MainTitle>{t('MainHome.Title2')}</MainTitle>
-                    <TitleLine></TitleLine>
-                    <MainParagraph>{t('MainHome.Description')}</MainParagraph> */}
+                    <Fade left>
                     <MainTitle>쌓여가는 데이터! 고민되시죠?</MainTitle>
                     <MainParagraph><Icon /> 데이터는 넘쳐나는데.. 도대체 무엇을 해야 하지?</MainParagraph>
                     <MainParagraph><Icon /> 우리 회사엔 데이터 사이언티스트도 없는데..</MainParagraph>
@@ -39,8 +39,9 @@ const MainInfoSection = () => {
                             </Link>
                         </ProgramExplore>
                     </ButtonsDiv>
+                    </Fade>
                 </TitleTextWrapper> 
-
+                
             </Wrapper>
         </>
     )

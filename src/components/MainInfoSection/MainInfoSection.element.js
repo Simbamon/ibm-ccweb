@@ -8,7 +8,7 @@ export const BackgroundVid = styled.div `
     bottom: 0;
     left: 0;
     max-width: 100%;
-    height: 75vh;
+    height: 85vh;
     overflow: hidden;
     background-image: 
     url(${props => props.img});
@@ -28,7 +28,7 @@ export const Wrapper = styled.div `
     justify-content: flex-start;
     max-width: 100%;
     align-items: center;
-    height: 75vh;
+    height: 85vh;
     min-height: -webkit-fill-available;
 
     margin-right: auto;
@@ -38,8 +38,11 @@ export const Wrapper = styled.div `
 
     @media screen and (max-width: 991px) {
         max-width: 1300px;
-        padding-right: 30px;
-        padding-left: 30px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
     }
     
     
@@ -57,7 +60,6 @@ export const TitleTextWrapper = styled.div `
 
     @media screen and (max-width: 991px) {
         min-width: 280px;
-        padding: 20px;
     }
 `
 
@@ -100,10 +102,17 @@ export const MainParagraph = styled.p `
 
 export const ButtonsDiv = styled.div`
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const ReserveButton = styled.button`
-    margin-top: 30px;
+
     background: #0062FF;
     white-space: nowrap;
     padding: 10px 25px;
@@ -126,21 +135,27 @@ export const ReserveButton = styled.button`
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        margin-right: 0;
         margin-bottom: 15px;
     }
 `
 export const Icon = styled(FiCheckSquare)`
-    font-size: 23px;
+    font-size: 1.4rem;
     margin-right: 7px;
     vertical-align: middle;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.0rem;
+        margin-right: 5px;
+    }
 `
 
 export const ProgramExplore = styled.a `
     font-size: 13px;
+    line-height: 19px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    padding-bottom: 10px;
     background: linear-gradient(#fff, #fff) bottom/0% 2px no-repeat;
     transition:0.5s all;
 

@@ -35,13 +35,14 @@ export const NavbarContainer = styled.div`
   
 `;
 
-export const NavLogo = styled.h1`
-  color: ${({scrollNav}) => (scrollNav ? 'black' : 'white')};;
+export const NavLogo = styled(Link)`
+  color: ${({scrollNav}) => (scrollNav ? '#000000' : 'white')};;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-weight: bold;
   z-index: 999;
   font-size: 20px;
 `;
@@ -177,7 +178,7 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const ReserveButton = styled.button`
-    background: ${({scrollNav}) => (scrollNav ? 'blue' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#0062FF' : 'transparent')};
     white-space: nowrap;
     height: 40px;
     padding: 5px 25px;
@@ -192,12 +193,12 @@ export const ReserveButton = styled.button`
     cursor: pointer;
     margin-right: 0;
     width: 100%;
-    border: 2px solid white;
+    border: ${({scrollNav}) => (scrollNav ? '2px solid #0062FF' : '2px solid #fff')};
     &:hover {
         transition: all 0.3s ease-out;
-        border: 2px solid blue;
-        background: white;
-        color: black;
+        border: ${({scrollNav}) => (scrollNav ? '2px solid #000000' : '2px solid #0062FF')};
+        background: ${({scrollNav}) => (scrollNav ? '#FFF' : '#0062FF')};
+        color: ${({scrollNav}) => (scrollNav ? '#000000' : '#FFF')};
     }
 
     @media screen and (max-width: 768px) {

@@ -230,7 +230,7 @@ export const SummaryBoxContainer = styled.div`
 export const Arrowright = styled.div`
     width: 0; 
     height: 0;
-    margin: 10px;
+    margin: 5px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 15px solid #c00000;
@@ -263,7 +263,7 @@ export const DiagramText = styled.p `
 export const DiagramBox = styled.div `
     width: 100%; 
     height: 100px;
-    border: 0.2rem solid #D12765;
+    border: 0.13rem solid #D12765;
     border-radius: 10px;
     display: flex; 
     justify-content: space-between;
@@ -283,7 +283,7 @@ export const DiagramBox = styled.div `
 export const DiagramBoxDescription = styled.div`
     margin-left: 10px;
     margin-right: 10px;
-    width: 130px; 
+    width: 100px; 
     height: 60px;
     border-radius: 10px;
     border: 0.2rem solid #FFA1C2; 
@@ -294,7 +294,7 @@ export const DiagramBoxDescription = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.5rem;
     font-weight: 600;
     flex: 1;
@@ -305,4 +305,21 @@ export const DiagramBoxDescription = styled.div`
         flex-direction: column;
         width: 150px;
     }
+`
+
+export const CommentBox = styled.div`
+    position: relative; 
+    margin-top: 40px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 60px;
+
+    }
+`
+
+export const Comment = styled.p`
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem;
 `

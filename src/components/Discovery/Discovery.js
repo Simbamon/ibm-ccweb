@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, Arrowright, DiagramWrapper, DiagramText, DiagramBox, 
-         DiagramBoxDescription } from './Discovery.element'
+         DiagramBoxDescription, CommentBox, Comment } from './Discovery.element'
 import { useTranslation } from 'react-i18next';
-import Carousel from 'react-elastic-carousel'
-import Fade from 'react-reveal/Fade'
-import { render } from '@testing-library/react';
+import Slide from 'react-reveal/Slide';
+
 
 const Discovery = () => {
     const { t } = useTranslation();
@@ -26,7 +25,7 @@ const Discovery = () => {
                                     <li>데이터를 체계적으로 관리할 수 있는 방안 마련하기</li>
                                     <li>효율적인 머신 러닝을 위한 상위 레벨의 아키텍처 정의해 보기</li>
                                     <li>우선 순위에 따라 로드맵 설계해 보기</li>
-                                </ul>,
+                                </ul>
                             </div>
                         </SummaryDescription>
                     </SummaryBox>
@@ -75,7 +74,7 @@ const Discovery = () => {
                                     <li>데이터를 체계적으로 관리할 수 있는 방안 마련하기</li>
                                     <li>효율적인 머신 러닝을 위한 상위 레벨의 아키텍처 정의해 보기</li>
                                     <li>우선 순위에 따라 로드맵 설계해 보기</li>
-                                </ul>,
+                                </ul>
                             </div>
                         </SummaryDescription>
                     </SummaryBox>
@@ -154,6 +153,11 @@ const Discovery = () => {
                             </DiagramWrapper>
                             </div>
                         </SummaryDescription>
+                        <CommentBox>
+                            <Comment>
+                                * IBM Garage에 대해 좀 더 알고 싶다면, Garage 소개 세션을 진행해 드립니다. (소개 세션은 무료)
+                            </Comment>
+                        </CommentBox>
                     </SummaryBox>
                 </SummaryBoxContainer>
             </div>
@@ -168,6 +172,7 @@ const Discovery = () => {
         <>
             <BackgroundSection id="dw">
                 <Container>
+                    <Slide right>
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Discovery Workshop</StepTitle>
@@ -187,6 +192,7 @@ const Discovery = () => {
                             
                         </Flexbox2>
                     </MainFlexbox>
+                    </Slide>
                 </Container>
                     
             </BackgroundSection>

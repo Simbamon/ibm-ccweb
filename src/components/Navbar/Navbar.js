@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <>
-            <IconContext.Provider value= {{ color: '#fff'}}>
+            <IconContext.Provider scrollNav = {scrollNav} value= {{ color: (scrollNav ? '#000000' : '#FFF')}}>
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
                         <NavLogo scrollNav = {scrollNav} to='/ibm-demozone' >

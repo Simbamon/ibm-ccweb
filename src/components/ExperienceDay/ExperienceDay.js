@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './ExperienceDay.element'
 import { useTranslation } from 'react-i18next';
-import Fade from 'react-reveal/Fade'
+import Rotate from 'react-reveal/Rotate';
 
 const ExperienceDay = () => {
     const { t } = useTranslation();
@@ -108,6 +108,7 @@ const ExperienceDay = () => {
         <>
             <BackgroundSection id="ed">
                 <Container>
+                    <Rotate top left>
                     <MainFlexbox>                     
                         <Flexbox2>
                             <ButtonBox>
@@ -146,6 +147,7 @@ const ExperienceDay = () => {
                             <Picture src={require('../../images/edpic.png').default} alt='handson'/>
                         </Flexbox1>
                     </MainFlexbox>
+                    </Rotate>
                 </Container>
                     
             </BackgroundSection>

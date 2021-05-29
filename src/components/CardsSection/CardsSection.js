@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CardSection, CardsWrapper, CardsContainer, TitleCard, Cards, CardInfo, 
          CardTitle, CardSubHeading, CardHidden} from './CardsSection.element'
 import Fade from 'react-reveal/Fade'
-import { useTranslation } from 'react-i18next'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const CardsSection = () => {
-    const { t } = useTranslation();   
     return (
         <>
             <CardSection>
