@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
+import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
 import Fade from 'react-reveal/Fade'
 
 const TechonologyBriefing = () => {
     const { t } = useTranslation();
-
-    const taList = ["마이크로 서비스 아키텍처가 무엇인가요?","기존 아키텍처와 마이크로 서비스 아키텍처 비교해 보기","마이크로 서비스 디자인의 기본 원리 이해하기","클라우드 네이티브 앱 개발을 위한 개발 방법론 알아 보기"]
 
     const [State, setState] = useState({
         taIntro: t('DigitalJourney.DAIIntro'),
@@ -127,22 +125,26 @@ const TechonologyBriefing = () => {
                                 <SummaryDescription >{taIntro}</SummaryDescription>
                                 <SummaryDescriptionHash>{taHashTag}</SummaryDescriptionHash>
                             </SummaryTitleBox>
-                            <SummaryBox>
-                                <SummaryTitle>프로그램 구성</SummaryTitle>
-                                <SummaryDescription>
-                                    <div style={{display: "inline-block", textAlign: "left", listStylePosition: "outside"}}>
-                                        {taConfig}
-                                    </div>
-                                </SummaryDescription>
-                            </SummaryBox>
-                            <SummaryBox>
-                                <SummaryTitle>프로그램 안내</SummaryTitle>
-                                <SummaryDescription>
-                                    <div style={{display: "inline-block", textAlign: "left", listStylePosition: "outside"}}>
-                                        {taGuide}
-                                    </div>        
-                                </SummaryDescription>
-                            </SummaryBox>
+                            <div style={{minWidth: "100%"}}>
+                                <SummaryBoxContainer>
+                                    <SummaryBox>
+                                        <SummaryTitle>프로그램 구성</SummaryTitle>
+                                        <SummaryDescription>
+                                            <div style={{display: "inline-block", textAlign: "left", listStylePosition: "outside"}}>
+                                                {taConfig}
+                                            </div>
+                                        </SummaryDescription>
+                                    </SummaryBox>
+                                    <SummaryBox>
+                                        <SummaryTitle>프로그램 안내</SummaryTitle>
+                                        <SummaryDescription>
+                                            <div style={{display: "inline-block", textAlign: "left", listStylePosition: "outside"}}>
+                                                {taGuide}
+                                            </div>        
+                                        </SummaryDescription>
+                                    </SummaryBox>
+                                </SummaryBoxContainer>
+                            </div>
                         </Flexbox2>
                     </MainFlexbox>
                 </Container>

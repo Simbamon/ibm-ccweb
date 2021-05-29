@@ -45,7 +45,6 @@ export const Flexbox1 = styled.div`
     align-items: center;
     justify-content: center;
     padding-right: 100px;
-
     @media screen and (max-width: 991px) {
         flex: 1 1 100%;
         margin-left: 0px;
@@ -122,7 +121,7 @@ export const SummaryTitleBox = styled.div`
     
 
     @media screen and (max-width: 1300px) {
-        max-height: 250px;
+        max-height: 100%;
     }
 
     @media screen and (max-width: 991px) {
@@ -134,16 +133,27 @@ export const SummaryTitleBox = styled.div`
     }
 
 `
+export const SummaryBoxContainer = styled.div`
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media screen and (max-width: 991px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+`
 
 export const SummaryBox = styled.div`
     flex: 1 0 calc(50% - 50px);
-    background-color: #e6e6e6;
     padding: 40px;
     max-height: 100%;
     min-height: 310px;
 
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1000px) {
         flex: 1 0 calc(100% - 10px);
         min-height: 100%;
         display: flex;

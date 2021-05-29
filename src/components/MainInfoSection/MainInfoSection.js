@@ -1,11 +1,9 @@
 import React from 'react'
 import Img from '../../images/1..JPG'
-import { useTranslation } from 'react-i18next';
 import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, Icon, buttonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const MainInfoSection = () => {
-    const { t } = useTranslation(); 
 
     return (
         <>  

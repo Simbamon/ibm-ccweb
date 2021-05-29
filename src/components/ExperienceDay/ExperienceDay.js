@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
+import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './ExperienceDay.element'
 import { useTranslation } from 'react-i18next';
 import Fade from 'react-reveal/Fade'
@@ -13,8 +13,8 @@ const ExperienceDay = () => {
         taConfig: <ul>
                     <li>효과적인 데이터 소스 관리를 위한 가상화 방법 알아보기</li>
                     <li>필요한 데이터를 좀 더 쉽게 찾아보자!  카탈로그 사용법 익히기</li>
-                    <li>딱 맞는 머신러닝 모델, 쉽고 빠르게 개발하고 적용해 보기 </li>
-                    <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기 </li>
+                    <li>딱 맞는 머신러닝 모델, 쉽고 빠르게 개발하고 적용해 보기</li>
+                    <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기</li>
                 </ul>,
         taGuide: <ul>
                     <li>대상: 데이터 엔지니어, 데이터 사이언티스트, 데이터 아키텍트, 데이터를 활용하는 앱 개발자 등 머신 러닝 및 AI 에 관심있는 누구나 가능</li>
@@ -45,7 +45,7 @@ const ExperienceDay = () => {
                         <li>효과적인 데이터 소스 관리를 위한 가상화 방법 알아보기</li>
                         <li>필요한 데이터를 좀 더 쉽게 찾아보자!  카탈로그 사용법 익히기</li>
                         <li>딱 맞는 머신러닝 모델, 쉽고 빠르게 개발하고 적용해 보기</li>
-                        <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기 </li>
+                        <li>머신 러닝 모델은 믿을 수 있을까?  신뢰도 평가하고 관리하기</li>
                     </ul>,
             taGuide: <ul>
                         <li>대상: 데이터 엔지니어, 데이터 사이언티스트, 데이터 아키텍트, 데이터를 활용하는 앱 개발자 등 머신 러닝 및 AI 에 관심있는 누구나 가능</li>
@@ -119,22 +119,26 @@ const ExperienceDay = () => {
                                 <SummaryDescription >{taIntro}</SummaryDescription>
                                 <SummaryDescriptionHash>{taHashtag}</SummaryDescriptionHash>
                             </SummaryTitleBox>
-                            <SummaryBox>
-                                <SummaryTitle>프로그램 구성</SummaryTitle>
-                                <SummaryDescription>
-                                    <div style={{display: "inline-block", textAlign: "left"}}>
-                                        {taConfig}
-                                    </div>
-                                </SummaryDescription>
-                            </SummaryBox>
-                            <SummaryBox>
-                                <SummaryTitle>프로그램 안내</SummaryTitle>
-                                <SummaryDescription>
-                                    <div style={{display: "inline-block", textAlign: "left"}}>
-                                        {taGuide}
-                                    </div>        
-                                </SummaryDescription>
-                            </SummaryBox>
+                            <div style={{minWidth: "100%"}}>
+                                <SummaryBoxContainer>
+                                    <SummaryBox>
+                                        <SummaryTitle>프로그램 구성</SummaryTitle>
+                                        <SummaryDescription>
+                                            <div style={{display: "inline-block", textAlign: "left"}}>
+                                                {taConfig}
+                                            </div>
+                                        </SummaryDescription>
+                                    </SummaryBox>
+                                    <SummaryBox>
+                                        <SummaryTitle>프로그램 안내</SummaryTitle>
+                                        <SummaryDescription>
+                                            <div style={{display: "inline-block", textAlign: "left"}}>
+                                                {taGuide}
+                                            </div>        
+                                        </SummaryDescription>
+                                    </SummaryBox>
+                                </SummaryBoxContainer>
+                            </div>
                         </Flexbox2>
                         <Flexbox1>
                             <StepTitle>Experience Day</StepTitle>
