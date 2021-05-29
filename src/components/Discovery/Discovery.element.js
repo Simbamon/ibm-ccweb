@@ -133,18 +133,6 @@ export const SummaryTitleBox = styled.div`
     }
 
 `
-export const SummaryBoxContainer = styled.div`
-    background-color: #e6e6e6;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    @media screen and (max-width: 991px) {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-`
 
 export const SummaryBox = styled.div`
     flex: 1 0 calc(50% - 50px);
@@ -222,5 +210,99 @@ export const ExampleButton = styled.a`
     @media screen and (max-width: 1000px) {
         width: 100%;
         margin: 5px;
+    }
+`
+
+export const SummaryBoxContainer = styled.div`
+    background-color: #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: auto;
+
+    @media screen and (max-width: 991px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+`
+
+export const Arrowright = styled.div`
+    width: 0; 
+    height: 0;
+    margin: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #c00000;
+
+    @media screen and (max-width: 991px) {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid #c00000;   
+    }
+`
+
+export const DiagramWrapper = styled.div `
+    display: flex;
+    vertical-align: middle;
+
+    @media screen and (max-width: 991px) {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
+export const DiagramText = styled.p `
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+`
+
+export const DiagramBox = styled.div `
+    width: 100%; 
+    height: 100px;
+    border: 0.2rem solid #D12765;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+        height: 100%;
+        flex-direction: column;
+        width: 180px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    
+` 
+
+export const DiagramBoxDescription = styled.div`
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 130px; 
+    height: 60px;
+    border-radius: 10px;
+    border: 0.2rem solid #FFA1C2; 
+    background-color: #FFA1C2;
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    flex: 1;
+
+    @media screen and (max-width: 991px) {
+        margin: 15px;
+        height: 100%;
+        flex-direction: column;
+        width: 150px;
     }
 `

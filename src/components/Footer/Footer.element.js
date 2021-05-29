@@ -11,11 +11,10 @@ export const FooterContainer = styled.div `
 export const FooterDiv = styled.div `
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
     
 
     @media screen and (max-width: 991px) {
@@ -69,7 +68,7 @@ export const FooterLinkLine = styled.hr `
     color: #fff;
     margin-top: 10px;
     margin-bottom: 15px;
-    width: 100%;
+    width: 25%;
 `
 export const FooterContents = styled.p `
     color:#fff;

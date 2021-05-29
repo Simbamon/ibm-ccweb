@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../../images/1..JPG'
-import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, Icon, buttonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
+import { Wrapper, BackgroundVid, TitleTextWrapper, MainTitle, MainParagraph, Icon, ButtonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
 import { Link } from "react-scroll";
 
 const MainInfoSection = () => {
@@ -24,7 +24,7 @@ const MainInfoSection = () => {
                     <MainParagraph><Icon /> 넘쳐나는 솔루션들..  하나의 솔루션으로 해결할 수 없나?</MainParagraph>
                     <br></br>
                     <MainParagraph>무료로 제공되는 다양한 고객 경험 프로그램으로 당신의 고민을 시원하게 해결해 드립니다.</MainParagraph>
-                    <buttonsDiv>
+                    <ButtonsDiv>
                         <ReserveButton>프로그램 신청하기</ReserveButton>
                         <ProgramExplore>
                             <Link
@@ -38,7 +38,7 @@ const MainInfoSection = () => {
                             프로그램 살펴보기
                             </Link>
                         </ProgramExplore>
-                    </buttonsDiv>
+                    </ButtonsDiv>
                 </TitleTextWrapper> 
 
             </Wrapper>

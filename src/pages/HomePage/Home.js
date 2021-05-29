@@ -12,8 +12,6 @@ const Home = () => {
             <TechonologyBriefing />
             <ExperienceDay />
             <Discovery />
-            {/* <InfoSection3 {...InfoThree} />
-            <InfoSection2 {...InfoTwo} /> */}
             
             
         </>

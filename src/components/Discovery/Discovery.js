@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
-         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './Discovery.element'
+         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, Arrowright, DiagramWrapper, DiagramText, DiagramBox, 
+         DiagramBoxDescription } from './Discovery.element'
 import { useTranslation } from 'react-i18next';
 import Carousel from 'react-elastic-carousel'
 import Fade from 'react-reveal/Fade'
@@ -111,7 +112,46 @@ const Discovery = () => {
                         <SummaryTitle>프로그램 구성 및 안내</SummaryTitle>
                         <SummaryDescription>
                             <div style={{display: "inline-block", textAlign: "left"}}>
-                                asdf
+                            <DiagramWrapper>
+                            <div>
+                                    <DiagramText>프로젝트 시작 전</DiagramText>
+                                        <DiagramBox>
+                                            <DiagramBoxDescription>
+                                                Framing<br></br>Workshop
+                                            </DiagramBoxDescription>
+                                        </DiagramBox>
+                                    <DiagramText>기간: 2시간</DiagramText>
+                                </div>
+                                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Arrowright></Arrowright>
+                                </div>
+                                <div>
+                                    <DiagramText>IBM Garage Engagement Process</DiagramText>
+                                        <DiagramBox style={{margin:"auto"}}>
+                                            <DiagramBoxDescription style={{backgroundColor: "#EE538B", border: "0.2rem solid #EE538B"}}>
+                                                Discovery<br></br>Workshop
+                                            </DiagramBoxDescription>
+                                            <DiagramBoxDescription style={{marginLeft: "0px", marginRight: "0px", backgroundColor: "#EE538B", border: "0.2rem solid #EE538B"}}>
+                                                Architecture<br></br>Workshop
+                                            </DiagramBoxDescription>
+                                            <DiagramBoxDescription style={{backgroundColor: "#EE538B", border: "0.2rem solid #EE538B"}}>
+                                                Minimum Viable<br></br>Product Build-up
+                                            </DiagramBoxDescription>
+                                        </DiagramBox>
+                                    <DiagramText>기간: 5주 ~ 12주 ( 유스케이스 복잡도에 따라 결정 )</DiagramText>
+                                </div>
+                                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Arrowright></Arrowright>
+                                </div>
+                                <div>
+                                    <DiagramText>프로젝트 이후</DiagramText>
+                                        <DiagramBox style={{border: "0.2rem dashed #D12765"}}>
+                                            <DiagramBoxDescription style={{backgroundColor: "#D22765", border: "0.2rem solid #D22765"}}>
+                                                Extension
+                                            </DiagramBoxDescription>
+                                        </DiagramBox>
+                                </div>
+                            </DiagramWrapper>
                             </div>
                         </SummaryDescription>
                     </SummaryBox>
@@ -124,9 +164,6 @@ const Discovery = () => {
         })
     }
 
-
-
-    
     return (
         <>
             <BackgroundSection id="dw">
@@ -147,6 +184,7 @@ const Discovery = () => {
                                 <SummaryDescriptionHash >{taHashtag}</SummaryDescriptionHash>
                             </SummaryTitleBox>
                             {rendering}
+                            
                         </Flexbox2>
                     </MainFlexbox>
                 </Container>

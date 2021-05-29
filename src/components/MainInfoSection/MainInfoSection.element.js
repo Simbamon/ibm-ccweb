@@ -98,7 +98,7 @@ export const MainParagraph = styled.p `
 
 `
 
-export const buttonsDiv = styled.div`
+export const ButtonsDiv = styled.div`
   display: flex;
 `
 
