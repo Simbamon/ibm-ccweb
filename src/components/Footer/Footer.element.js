@@ -53,7 +53,6 @@ export const FooterLinksItems = styled.div `
         margin: 0;
         padding: 10px;
         width: 100%;
-        margin-top: 25px;
     }
 `
 
@@ -69,6 +68,10 @@ export const FooterLinkLine = styled.hr `
     margin-top: 10px;
     margin-bottom: 15px;
     width: 25%;
+
+    @media screen and (max-width: 420px) {
+        width: 100%;
+    }
 `
 export const FooterContents = styled.p `
     color:#fff;

@@ -1,60 +1,86 @@
 {
     "NavbarContents": {
-        "1": "Home",
-        "2": "Demo"
+        "1": "홈",
+        "2": "데모",
+        "3": "회원가입"
     },
     "MainHome":{
         "Title1": "Digital Transformation",
-        "Description1": "Description Translation goes here",
-        "Description2": "Description Translation 2 goes here"
+        "Description1": "막상 어디서부터 어떻게 시작해야 할지 막막할 때, 여러분의 조직에 꼭 필요한 다채로운 프로그램을 선택해보세요.",
+        "Description2": "일하는 방식을 변화하고 성공적인 디지털 전환을 이룰 수 있도록 다양한 고객 경험 프로그램을 무료로 제공하고 있습니다."
     },
     "Home":{
-        "FirstTopLine": "Briefing Source",
-        "FirstHeadLine": "Insert Briefing Source information here",
-        "FirstSummary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "FirstButton": "Get Started",
-        "SecondTopLine": "Demo Zone",
-        "SecondHeadLine": "Insert Demo Zone information here",
-        "SecondSummary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "SecondButton": "Experience demos",
-        "ThirdTopLine": "IBM Solution",
-        "ThirdHeadLine": "Insert IBM Solution information here",
-        "ThirdSummary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "ThirdButton": "Explore IBM Solution"
-    },
+        "FirstTopLine": "",
+        "FirstHeadLine": "\"안 쓰는 데이터는 많고 클라우드를 도입해 싶은데 ..\"",
+        "FirstSummary": "IBM Client Center 프로그램은 3단계로 구성되어 있으며\n고객 상황과 니즈에 따라 맞춤형 Agenda를 제공해 드립니다.\n 모든 과정은 고객이 기술의 구현 과정을 쉽게 이해하고 실제\n 가치를 경험할 수 있도록 데모와 실습 위주로 설계되었습니다.",
+        "FirstButton": "IBM Cloud 사용해보기",
+        "SecondTopLine": "",
+        "SecondHeadLine": "\"어떤식으로 IBM 서비스들을 사용할수 있나요?\"",
+        "SecondSummary": "클라이언트 센터에서는 다양한 PoC(Proof of Concept)와 데모 비디오를 준비해서 여러분의 비지니스에 IBM 솔루션을 도입한 예를 보여줍니다.",
+        "SecondButton": "여기서 데모를 체험해보세요",
+        "ThirdTopLine": "",
+        "ThirdHeadLine": "\"그래도 사용하는 방법을 잘 모르겠어요..\"",
+        "ThirdSummary": "클라이언트 센터에서는 여러분이 사용하고자 하는 서비스를 hands-on으로 체험하고 그 분야의 전문가에게 질문할 수 있는 시간을 가질 수 있는 프로그램을 운영하고 있습니다.",
+        "ThirdButton": "지금 바로 프로그램을 예약해 보세요"
+    },    
     "Cards": {
-        "CardsHeading": "Check out more contents here",
-        "CardSubHeading1": "DALLAS",
-        "CardHeading1": "Dallas Client Center Demo Link",
-        "CardSubHeading2": "TOKYO",
-        "CardHeading2": "Client Center Experience Technolgy Tube",
-        "CardSubHeading3": "BLOG",
-        "CardHeading3": "Your Business with IBM Technology",
-        "CardFooter": "LEARN MORE"
+        "CardsHeading": "더 많은 컨텐츠를 여기서 확인하세요",
+        "CardSubHeading1": "로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트",
+        "CardHeading1": "달라스 Cliente Center 데모 링크",
+        "CardSubHeading2": "로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트",
+        "CardHeading2": "도쿄 Client Center Experience Technolgy Tube",
+        "CardSubHeading3": "로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트",
+        "CardHeading3": "IBM 기술과 함께하는 비지니스의 미래",
+        "CardFooter": "더 알아보기"
     },
     "Footer":{
-        "Solution": "IBM Service/Solution",
+        "Solution": "IBM 서비스/솔루션",
         "Solutions1": "Machine Learning",
         "Solutions2": "IBM Cloud Satellite",
         "Solutions3": "Cloud Paks Series",
         "Solutions4": "IBM Weather",
-        "ContactUs": "Contact Us",
-        "ContactUs1": "Address: 10 Gukjegeumyung-ro, Yeoui-dong, Yeongdeungpo-gu, Seoul",
-        "ContactUs2": "Phone Number: (02)3781-5006",
-        "ContactUs3": "Email: cipkorea@kr.ibm.com",
-        "VisitUs": "Visit Us",
-        "NewsLetter":" Get the latest IBM newsletter",
-        "NewsLetter1":"Enter your e-mail address",
-        "NewsLetter2":"Subscribe"
-
+        "ContactUs": "회사 정보",
+        "ContactUs1": "서울특별시 영등포구 국제금융로 10 서울국제금융센터 (3 IFC) 6층",
+        "ContactUs2": "전화번호: (02)3781-5006",
+        "ContactUs3": "이메일: cipkorea@kr.ibm.com",
+        "VisitUs": "소셜미디어",
+        "NewsLetter":" 지금 IBM 뉴스레터를 구독하세요",
+        "NewsLetter1":"이메일 입력",
+        "NewsLetter2":"구독하기"
     },
     "DigitalJourney":{
         "Intro":"프로그램 소개",
         "Config":"프로그램 구성",
         "Guide": "프로그램 안내",
-        "DAIIntro":"test",
-        "DAIConfig":"• test\n• test\n• test\n•  AI 라이프 싸이클 데모\n•  신뢰할 수 있는 모델의 운영 관리",
-        "DAIGuide":""
-
+        "DAIIntro":"기업의 경쟁력을 극대화 시켜주는 최강 아이템 !! 바로 머신 러닝과 AI입니다.\n당신의 비즈니스에 활용하기 위한 첫 걸음으로 본 세션을 활용해 보세요!",
+        "DAHashtag": "#경쟁력강화   #머신러닝   #AI   #쉬운설명   #완벽한이해",
+        "DAIConfig":"",
+        "DAIGuide":"",
+        "OHIntro":"클라우드가 대세라지만 속도를 내서 뛰어 들기엔 기업 내 클라우드 인력은 언제나 부족합니다.\n최적화된 클라우드 환경을 위한 기반 기술은 무엇이 있는지  또, 무엇을 준비해야 하는지 본 세션으로 시작해 볼까요?",
+        "OHHashtag": "#너도나도클라우드   #MSA   #클라우드기술   #쉬운설명   #앱개발",
+        "OHConfig":"",
+        "OHGuide":"",
+        "CNIntro":"IBM Cloud 에서 제공되는 다양한 서비스를 내가 원하는 위치에서 실행해 보세요.\n사용 중인 타사 클라우드 환경에서도,  데이터 센터에 있는 컴퓨팅 환경에서도 어디서든 가능합니다.",
+        "CNHashtag":"#IBMCloud   #어디서든   #원하는서비스를    #빠르게실행   #쉬운구성   #편리한관리",
+        "CNConfig":"",
+        "CNGuide":"",
+        "DSIntro":"기업의 경쟁력을 극대화 시켜주는 최강 아이템 !! 바로 머신 러닝과 AI입니다.\n당신의 비즈니스에 활용하기 위한 첫 걸음으로 본 세션을 활용해 보세요!",
+        "DSHashtag":"#내손으로직접  #실제경험   #바로이거야!   #머신러닝   #AI   #이해팍팍   #바로적용",
+        "DSConfig":"•  데이터 가상화 기술을 이용한 효과적인 데이터 소스 관리\n•  카탈로그를 이용한 데이터 거버넌스\n•  오픈 소스를 포함한 다양한 프레임워크를 이용한 머신러닝 모델 개발 및 배치\n•  투명하고 신뢰할 수 있는 모델 운영",
+        "DSGuide":"•  대상: 기업에 근무하는 데이터 사이언티스트, 데이터 엔지니어 또는 데이터 사이언스 애플리케이션 개발자 및 아키텍트\n•  소요시간: 1 day (10:00 ~ 17:00) 실습포함",
+        "WDIntro":"최근 콜로그 분석, 마켓 분석, 고객 요구 분석 등 다양한 분야에서 비정형 데이터 분석을 비즈니스에 활용하고자 하는 시도가 활발해지고 있습니다. 이 세션에서는 다양한 use case에 대한 데모와 더불어 직접 실습을 통해서 텍스트 분석에 필요한 전체 과정에 대한 경험을 제공함으로써 텍스트 데이터 분석 기술 및 활용해 대한 이해를 높이는데 목적이 있습니다.",
+        "WDHashtag":"#내손으로직접   #실제경험   #비정형데이터분석   #이해팍팍   #바로적용   #통쾌한분석결과",
+        "WDConfig":"•  비정형 데이터 분석 개요\n•  사례로 알아보는 비정형 데이터 분석(Demo 시연)\n•  효율적인 비정형 데이터 분석\n•  기술 및 플랫폼에 대한 이해 특정 Use Case 기반의 분석 실습",
+        "WDGuide":"•  소요 시간: 0.5 day (4시간, 협의 가능) 실습 포함\n•  대상: 비정형 데이터 분석에 관심있는 현업, IT 팀 또는 애플리케이션 개발자 및 아키텍트",
+        "AMIntro":"기업의 Cloud Transformation을 위한 주요 실행 전략으로 APP Modernization(앱현대화)을 빼놓을 수 없습니다. App Modernization을 위한 기반 기술을 이해하고, 현 시스템에서 운영되고 있는 다양한 애플리케이션을 좀 더 쉽고 빠르게 현대화하기 위한 최적의 솔루션을 경험해 봅니다.",
+        "AMHashtag":"#내손으로직접   #실제경험   #한달동안할일을하루만에   #완벽솔루션   #너도나도적용   #이해팍팍",
+        "AMConfig":"",
+        "AMGuide":"",
+        "LAIIntro":"비즈니스 경쟁력을 높이기 위해 데이터를 활용 할 준비가 되어 있나요?\n데이터를 어떻게 효율적으로 수집하고 관리해야 하는지, 준비된 데이터는 머신 러닝에 활용 할 수 있는지, 머신 러닝 운영을 위한 로드맵은\n어떻게 설계해야 하는지 전문가와 함께 찾아봅니다",
+        "LAHashtag":"#비즈니스경쟁력높이기  #데이터준비  #로드맵이필요해  #접근방법가이드  #역시전문가  #AI사다리  #AI로가고말거야",
+        "LAIConfig":"",
+        "LAIGuide":"",
+        "GAHashtag":"#혁신은차고에서   #IBMGarage   #미래의기업   #핵심역량   #내가주도적으로   #함께만들기"
     }
+
 }
