@@ -268,6 +268,7 @@ export const DiagramBox = styled.div `
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF;
 
     @media screen and (max-width: 991px) {
         height: 100%;

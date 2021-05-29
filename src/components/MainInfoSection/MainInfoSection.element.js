@@ -150,7 +150,7 @@ export const Icon = styled(FiCheckSquare)`
     }
 `
 
-export const ProgramExplore = styled.a `
+export const ProgramExplore = styled.p `
     font-size: 13px;
     line-height: 19px;
     font-weight: bold;

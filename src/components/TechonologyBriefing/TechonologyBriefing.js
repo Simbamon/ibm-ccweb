@@ -115,12 +115,8 @@ const TechonologyBriefing = () => {
                             <StepTitle>Technology Briefing</StepTitle>
                             <StepSubTitle>기술 브리핑</StepSubTitle>
                             <Picture src={require('../../images/tbpic.svg').default} alt='japan'/>
-                         
                         </Flexbox1>
-                        
-                        
                         <Flexbox2>
-                            
                             <ButtonBox>
                                 <ExampleButton onClick={changeDA} className={daClicked ? 'active': ''}>Data <span>&#38;</span> AI Briefing</ExampleButton>
                                 <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Open Hybrid Cloud Briefing</ExampleButton>
