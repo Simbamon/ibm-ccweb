@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
-         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './ExperienceDay.element'
+         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, GoBack, Arrow } from './ExperienceDay.element'
 import { useTranslation } from 'react-i18next';
 import Rotate from 'react-reveal/Rotate';
+import { Link } from "react-scroll";
 
 const ExperienceDay = () => {
     const { t } = useTranslation();
@@ -146,6 +147,20 @@ const ExperienceDay = () => {
                             <StepSubTitle>핸즈온 세션</StepSubTitle>
                             <Picture src={require('../../images/edpic.png').default} alt='handson'/>
                         </Flexbox1>
+                        <div style={{width: "100%"}}>
+                            <GoBack>
+                                <Link
+                                    activeClass="active"
+                                    to="main"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-120}
+                                    duration={500}
+                                >
+                                <Arrow />다시 돌아가기
+                                </Link>
+                            </GoBack>
+                        </div>
                     </MainFlexbox>
                     </Rotate>
                 </Container>

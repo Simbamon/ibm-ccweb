@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, Arrowright, DiagramWrapper, DiagramText, DiagramBox, 
-         DiagramBoxDescription, CommentBox, Comment } from './Discovery.element'
+         DiagramBoxDescription, CommentBox, Comment, GoBack, Arrow } from './Discovery.element'
 import { useTranslation } from 'react-i18next';
 import Slide from 'react-reveal/Slide';
-
+import { Link } from "react-scroll";
 
 const Discovery = () => {
     const { t } = useTranslation();
@@ -189,9 +189,23 @@ const Discovery = () => {
                                 <SummaryDescriptionHash >{taHashtag}</SummaryDescriptionHash>
                             </SummaryTitleBox>
                             {rendering}
-                            
                         </Flexbox2>
+                        <div style={{width: "100%"}}>
+                        <GoBack>
+                            <Link
+                                activeClass="active"
+                                to="main"
+                                spy={true}
+                                smooth={true}
+                                offset={-120}
+                                duration={500}
+                            >
+                            <Arrow />다시 돌아가기
+                            </Link>
+                        </GoBack>
+                        </div>
                     </MainFlexbox>
+                    
                     </Slide>
                 </Container>
                     

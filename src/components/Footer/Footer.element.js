@@ -45,7 +45,7 @@ export const FooterLinksItems = styled.div `
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     color: #fff;
 
@@ -60,6 +60,14 @@ export const FooterLinkTitle = styled.h1 `
     margin-bottom: 5px;
     line-height: 20px;
     font-size: 18px;
+    width: 50%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 420px) {
+        width: 100%;
+    }
 `
 
 export const FooterLinkLine = styled.hr `

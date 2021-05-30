@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import React from 'react'
-import { FooterContainer, FooterDiv, FooterLinkLine, FooterLinksContainer, FooterLinkWrapper, FooterLinksItems,FooterLinkTitle, FooterContents,
+import { FooterContainer, FooterDiv, FooterLinksContainer, FooterLinkWrapper, FooterLinksItems,FooterLinkTitle, FooterContents,
         FooterBottom, FooterLogoWrapper, FooterLogoImage, FooterLogoImageCopyright } from './Footer.element'
 
 
@@ -15,7 +15,6 @@ const Footer = () => {
                     <FooterLinkWrapper>
                         <FooterLinksItems>
                             <FooterLinkTitle>{t('Footer.ContactUs')}</FooterLinkTitle>
-                            <FooterLinkLine></FooterLinkLine>
                             <FooterContents>{t('Footer.ContactUs1')}</FooterContents>
                             <FooterContents>{t('Footer.ContactUs2')}</FooterContents>
                             <FooterContents>{t('Footer.ContactUs3')}</FooterContents>

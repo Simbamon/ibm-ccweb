@@ -9,7 +9,7 @@ const InfoSection = () => {
     return (
         <>
             <InfoSec img = {Image} alt='usa' id="program">
-                <Container>
+                <Container id="main">
                     <InfoRow>
                         <InfoColumn>
                             <Fade top>

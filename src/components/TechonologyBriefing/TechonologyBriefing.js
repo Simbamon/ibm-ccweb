@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
-         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton } from './TechonologyBriefing.element'
+         Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, GoBack, Arrow } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
 import Zoom from 'react-reveal/Zoom'
+import { Link } from "react-scroll";
 
 const TechonologyBriefing = () => {
     const { t } = useTranslation();
@@ -147,7 +148,20 @@ const TechonologyBriefing = () => {
                                 </SummaryBoxContainer>
                             </div>
                         </Flexbox2>
-                        
+                        <div style={{width: "100%"}}>
+                            <GoBack>
+                                <Link
+                                    activeClass="active"
+                                    to="main"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-120}
+                                    duration={500}
+                                >
+                                <Arrow />다시 돌아가기
+                                </Link>
+                            </GoBack>
+                        </div>
                     </MainFlexbox>
                     </Zoom>
                 </Container>

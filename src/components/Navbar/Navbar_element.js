@@ -178,14 +178,14 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const ReserveButton = styled.button`
-    background: ${({scrollNav}) => (scrollNav ? '#0062FF' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#FFF' : 'transparent')};
     white-space: nowrap;
     height: 40px;
     padding: 5px 25px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
-    color: #fff;
+    color: ${({scrollNav}) => (scrollNav ? '#000000' : '#FFF')};
     font-size: 14px;
     font-weight: bold;
     outline: none;
@@ -193,12 +193,12 @@ export const ReserveButton = styled.button`
     cursor: pointer;
     margin-right: 0;
     width: 100%;
-    border: ${({scrollNav}) => (scrollNav ? '2px solid #0062FF' : '2px solid #fff')};
+    border: ${({scrollNav}) => (scrollNav ? '2px solid #000000' : '2px solid #FFF')};
     &:hover {
         transition: all 0.3s ease-out;
-        border: ${({scrollNav}) => (scrollNav ? '2px solid #000000' : '2px solid #0062FF')};
-        background: ${({scrollNav}) => (scrollNav ? '#FFF' : '#0062FF')};
-        color: ${({scrollNav}) => (scrollNav ? '#000000' : '#FFF')};
+        border: 2px solid #0062FF;
+        background: #0062FF;
+        color: #FFF;
     }
 
     @media screen and (max-width: 768px) {

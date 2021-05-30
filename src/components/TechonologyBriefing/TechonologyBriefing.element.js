@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BsArrowUp } from 'react-icons/bs'
 
 export const BackgroundSection = styled.div`
     color: black;
@@ -227,4 +228,30 @@ export const ExampleButton = styled.a`
         width: 100%;
         margin: 5px;
     }
+`
+
+export const Arrow = styled(BsArrowUp)`
+    font-size: 1.5rem;
+    vertical-align: middle;
+`
+
+export const GoBack = styled.button`
+    text-align: end;
+    margin-top: 80px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    transition: transform .2s;
+    float: right;
+    color: #017D79;
+    font-weight: bold;
+    
+    &:hover ${Arrow}{
+        padding-bottom: 7px;
+        transform: scale(1.3)
+    }
+    :hover {
+        transform: scale(1.3)
+    }
+    
 `
