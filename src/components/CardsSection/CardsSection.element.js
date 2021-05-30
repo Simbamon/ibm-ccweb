@@ -75,6 +75,25 @@ export const TitleCard = styled.div `
   }
 `
 
+export const CardHidden = styled.div`
+  padding-top: 0px;
+    overflow:hidden;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-top:300px;
+  
+  @media screen and (max-width: 960px) {
+    margin-top:0px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+  
+`
+
 export const Cards = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
     url(${props => props.img});
@@ -85,6 +104,12 @@ export const Cards = styled.div`
   text-decoration: none;
   cursor: pointer;
   
+  &:hover {
+    ${CardHidden} {
+      margin-top:0px;
+      transition: all 0.3s ease-out;
+    }
+  }
 
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
@@ -110,24 +135,6 @@ export const Cards = styled.div`
   }
 `
 
-export const CardHidden = styled.div`
-  padding-top: 0px;
-    overflow:hidden;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    margin-top:300px;
-  
-  @media screen and (max-width: 960px) {
-    margin-top:0px;
-
-    &:hover {
-      transform: none;
-    }
-  }
-  
-`
 export const CardInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -135,14 +142,6 @@ export const CardInfo = styled.div`
   padding: 10px;
   align-items: left;
   color: #fff;
-
-  &:hover {
-    ${CardHidden} {
-      margin-top:0px;
-      transition: all 0.3s ease-out;
-    }
-  }
-  
 `
 
 export const CardTitle = styled.h1`
