@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React from 'react'
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FooterContainer, FooterDiv, FooterLinksContainer, FooterLinkWrapper, FooterLinksItems,FooterLinkTitle, FooterContents,
-        FooterBottom, FooterLogoWrapper, FooterLogoImage, FooterLogoImageCopyright, SocialIcons, SocialIconLink } from './Footer.element'
+        FooterBottom, FooterLogoWrapper, FooterLogoImage, SocialIcons, SocialIconLink } from './Footer.element'
 
 
 const Footer = () => {

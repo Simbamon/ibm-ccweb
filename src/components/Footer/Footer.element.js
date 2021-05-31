@@ -13,8 +13,8 @@ export const FooterDiv = styled.div `
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 5vw;
+    padding-left: 5vw;
     
 
     @media screen and (max-width: 991px) {
@@ -43,7 +43,7 @@ export const FooterLinksItems = styled.div `
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px;
+    margin: 16px 0;
     text-align: left;
     width: 50%;
     box-sizing: border-box;
@@ -220,7 +220,7 @@ export const FooterLogoWrapper = styled.div `
     display: flex;
     justify-content: flex-start;
     float: left;
-    margin: 16px;
+    margin: 16px 0;
 `
 
 export const FooterLogoImage = styled.img `

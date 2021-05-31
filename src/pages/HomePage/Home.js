@@ -1,5 +1,5 @@
 import React from 'react'
-import { InfoSection, TechonologyBriefing, ExperienceDay, Discovery, MainInfoSection, CardsSection } from '../../components'
+import { InfoSection, TechonologyBriefing, ExperienceDay, Discovery, MainInfoSection, CardsSection, Banner } from '../../components'
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
             <TechonologyBriefing />
             <ExperienceDay />
             <Discovery />
-            
+            <Banner />
             
         </>
     )

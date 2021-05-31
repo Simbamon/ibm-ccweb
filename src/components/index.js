@@ -6,3 +6,4 @@ export { default as TechonologyBriefing } from './TechonologyBriefing/Techonolog
 export { default as ExperienceDay } from './ExperienceDay/ExperienceDay'
 export { default as Discovery } from './Discovery/Discovery';
 export { default as CardsSection } from './CardsSection/CardsSection';
+export { default as Banner } from './Banner/Banner'
