@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, GoBack, Arrow } from './ExperienceDay.element'
 import { useTranslation } from 'react-i18next';
-import Rotate from 'react-reveal/Rotate';
 import { Link } from "react-scroll";
 
 const ExperienceDay = () => {
@@ -40,7 +39,7 @@ const ExperienceDay = () => {
 
     function changeDS() {
         setState({
-            taIntro: t('DigitalJourney.DAIIntro'),
+            taIntro: t('DigitalJourney.DSIntro'),
             taHashtag: t('DigitalJourney.DSHashtag'),
             taConfig: <ul>
                         <li>효과적인 데이터 소스 관리를 위한 가상화 방법 알아보기</li>
@@ -109,13 +108,12 @@ const ExperienceDay = () => {
         <>
             <BackgroundSection id="ed">
                 <Container>
-                    <Rotate top left>
                     <MainFlexbox>                     
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeDS} className={dsClicked ? 'active': ''}>Data Science</ExampleButton>
-                                <ExampleButton onClick={changeWD} className={wdClicked ? 'active' : ''}>Watson Discovery</ExampleButton>
-                                <ExampleButton onClick={changeAM} className={amClicked ? 'active' : ''}>App Modernization</ExampleButton>
+                                <ExampleButton onClick={changeDS} className={dsClicked ? 'active': ''}>Data Science Exp. Day</ExampleButton>
+                                <ExampleButton onClick={changeWD} className={wdClicked ? 'active' : ''}>Watson Discovery Exp. Day</ExampleButton>
+                                <ExampleButton onClick={changeAM} className={amClicked ? 'active' : ''}>App Modernization Exp. Day</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>
@@ -162,7 +160,6 @@ const ExperienceDay = () => {
                             </GoBack>
                         </div>
                     </MainFlexbox>
-                    </Rotate>
                 </Container>
                     
             </BackgroundSection>

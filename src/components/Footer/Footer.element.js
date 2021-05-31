@@ -227,15 +227,11 @@ export const FooterLogoImage = styled.img `
     
     padding-right: 0;
     border: 0;
-    max-width: 100%;
+    max-height: 32px;
+    max-width: 81px;
     vertical-align: middle;
     display: inline-block;
-    max-height: 150px;
-
-    @media screen and (max-width: 820px) {
-        max-height: 35px;
-        max-width: 100px;
-    }
+    
 `
 
 export const FooterLogoImageCopyright = styled.p `

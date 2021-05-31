@@ -3,7 +3,6 @@ import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContaine
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, Arrowright, DiagramWrapper, DiagramText, DiagramBox, 
          DiagramBoxDescription, CommentBox, Comment, GoBack, Arrow } from './Discovery.element'
 import { useTranslation } from 'react-i18next';
-import Slide from 'react-reveal/Slide';
 import { Link } from "react-scroll";
 
 const Discovery = () => {
@@ -172,7 +171,6 @@ const Discovery = () => {
         <>
             <BackgroundSection id="dw">
                 <Container>
-                    <Slide right>
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Discovery Workshop</StepTitle>
@@ -205,8 +203,6 @@ const Discovery = () => {
                         </GoBack>
                         </div>
                     </MainFlexbox>
-                    
-                    </Slide>
                 </Container>
                     
             </BackgroundSection>

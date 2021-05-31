@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { BackgroundSection, MainFlexbox, Flexbox1, ButtonBox, SummaryBoxContainer, SummaryBox, SummaryTitleBox, Flexbox2, StepTitle, StepSubTitle,
          Container, SummaryTitle, SummaryDescription, SummaryDescriptionHash, Picture, ExampleButton, GoBack, Arrow } from './TechonologyBriefing.element'
 import { useTranslation } from 'react-i18next';
-import Zoom from 'react-reveal/Zoom'
 import { Link } from "react-scroll";
 
 const TechonologyBriefing = () => {
@@ -110,7 +109,6 @@ const TechonologyBriefing = () => {
         <>
             <BackgroundSection id="tb">
                 <Container>
-                    <Zoom>
                     <MainFlexbox>
                         <Flexbox1>
                             <StepTitle>Technology Briefing</StepTitle>
@@ -120,7 +118,7 @@ const TechonologyBriefing = () => {
                         <Flexbox2>
                             <ButtonBox>
                                 <ExampleButton onClick={changeDA} className={daClicked ? 'active': ''}>Data <span>&#38;</span> AI Briefing</ExampleButton>
-                                <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Open Hybrid Cloud Briefing</ExampleButton>
+                                <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Cloud Native Tech. Briefing</ExampleButton>
                                 <ExampleButton onClick={changeCN} className={cnClicked ? 'active': ''}>IBM Cloud Satelite Briefing</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
@@ -163,7 +161,6 @@ const TechonologyBriefing = () => {
                             </GoBack>
                         </div>
                     </MainFlexbox>
-                    </Zoom>
                 </Container>
                     
             </BackgroundSection>

@@ -10,7 +10,7 @@ export const BackgroundVid = styled.div `
     max-width: 100%;
     height: 85vh;
     overflow: hidden;
-    background-image: 
+    background: 
     url(${props => props.img});
     background-size: 100% 100%;
     
@@ -50,9 +50,9 @@ export const Wrapper = styled.div `
 
 export const TitleTextWrapper = styled.div `
     border: none;
-    min-width: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    padding: 35px;
+    min-width: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 45px 15px 45px 15px;
     position: absolute;
     display: flex;
     flex-direction: column;

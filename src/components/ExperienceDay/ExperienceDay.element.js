@@ -200,7 +200,7 @@ export const ExampleButton = styled.a`
     padding: 10px 25px;
     color: black;
     font-weight: bold; 
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
     outline: none;
     border: 0;
