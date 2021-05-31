@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.js": "/ibm-demozone/static/js/main.52a1c7f5.chunk.js",
-    "main.js.map": "/ibm-demozone/static/js/main.52a1c7f5.chunk.js.map",
+    "main.js": "/ibm-demozone/static/js/main.2440af50.chunk.js",
+    "main.js.map": "/ibm-demozone/static/js/main.2440af50.chunk.js.map",
     "runtime-main.js": "/ibm-demozone/static/js/runtime-main.0decf849.js",
     "runtime-main.js.map": "/ibm-demozone/static/js/runtime-main.0decf849.js.map",
-    "static/js/2.c4700dc3.chunk.js": "/ibm-demozone/static/js/2.c4700dc3.chunk.js",
-    "static/js/2.c4700dc3.chunk.js.map": "/ibm-demozone/static/js/2.c4700dc3.chunk.js.map",
+    "static/js/2.1fdb2454.chunk.js": "/ibm-demozone/static/js/2.1fdb2454.chunk.js",
+    "static/js/2.1fdb2454.chunk.js.map": "/ibm-demozone/static/js/2.1fdb2454.chunk.js.map",
     "index.html": "/ibm-demozone/index.html",
-    "static/js/2.c4700dc3.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.c4700dc3.chunk.js.LICENSE.txt",
+    "static/js/2.1fdb2454.chunk.js.LICENSE.txt": "/ibm-demozone/static/js/2.1fdb2454.chunk.js.LICENSE.txt",
     "static/media/1..dc7841b7.JPG": "/ibm-demozone/static/media/1..dc7841b7.JPG",
     "static/media/dw.jpg": "/ibm-demozone/static/media/dw.7b1d19b2.jpg",
     "static/media/dwpic.png": "/ibm-demozone/static/media/dwpic.7f0bd5a6.png",
     "static/media/ed.jpg": "/ibm-demozone/static/media/ed.d6e8486a.jpg",
     "static/media/edpic.png": "/ibm-demozone/static/media/edpic.4df7d0aa.png",
     "static/media/getFetch.cjs": "/ibm-demozone/static/media/getFetch.d7d6010d.cjs",
+    "static/media/ibm.png": "/ibm-demozone/static/media/ibm.e94aa12b.png",
     "static/media/laptop.cd6f5146.jpg": "/ibm-demozone/static/media/laptop.cd6f5146.jpg",
     "static/media/tb.jpg": "/ibm-demozone/static/media/tb.8a41a900.jpg",
     "static/media/tbpic.svg": "/ibm-demozone/static/media/tbpic.9dd2d047.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0decf849.js",
-    "static/js/2.c4700dc3.chunk.js",
-    "static/js/main.52a1c7f5.chunk.js"
+    "static/js/2.1fdb2454.chunk.js",
+    "static/js/main.2440af50.chunk.js"
   ]
 }
