@@ -31,7 +31,7 @@ const Navbar = () => {
             <IconContext.Provider scrollNav = {scrollNav} value= {{ color: (scrollNav ? '#000000' : '#FFF')}}>
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
-                        <NavLogo scrollNav = {scrollNav} to='/ibm-demozone' >
+                        <NavLogo scrollNav = {scrollNav} to='/' >
                             IBM Client Center Korea
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Navbar, Footer } from './components'
 import GlobalStyle from './globalStyles';
 import Home from './pages/HomePage/Home';
@@ -9,9 +9,7 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      <Switch>
-        <Route path='/ibm-demozone/' exact component={ Home } />
-      </Switch>
+      < Home />
       <Footer />
     </Router>
   );
