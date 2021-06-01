@@ -24,7 +24,7 @@ const CardsSection = () => {
                                 <CardInfo>
                                     <CardTitle>기술 브리핑</CardTitle>
                                     <CardHidden>
-                                        <CardSubHeading>Data and AI, Hybrid Cloud<br></br>트렌드 및 기술을 이해해 보세요!</CardSubHeading>
+                                        <CardSubHeading>Data <span>&#38;</span> AI, Hybrid Cloud<br></br>트렌드 및 기술을 이해해 보세요!</CardSubHeading>
                                     </CardHidden>
                                     
                                 </CardInfo>

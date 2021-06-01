@@ -119,7 +119,7 @@ const TechonologyBriefing = () => {
                             <ButtonBox>
                                 <ExampleButton onClick={changeDA} className={daClicked ? 'active': ''}>Data <span>&#38;</span> AI Briefing</ExampleButton>
                                 <ExampleButton onClick={changeOH} className={ohClicked ? 'active': ''}>Cloud Native Tech. Briefing</ExampleButton>
-                                <ExampleButton onClick={changeCN} className={cnClicked ? 'active': ''}>IBM Cloud Satelite Briefing</ExampleButton>
+                                <ExampleButton onClick={changeCN} className={cnClicked ? 'active': ''}>IBM Cloud Satellite Briefing</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
                                 <SummaryDescription >{taIntro}</SummaryDescription>

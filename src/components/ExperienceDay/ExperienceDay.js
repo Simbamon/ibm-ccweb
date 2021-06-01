@@ -62,7 +62,7 @@ const ExperienceDay = () => {
     function changeWD() {
         setState({
             taIntro: <p>콜 로그 분석,  마켓 분석,  고객 요구 분석,  기술 문서 분석을 위해 수집된 데이터의 공통점은?<br></br>
-            바로 <span style={{color: "#0062FF", fontWeight: "600"}}>비정형 데이터</span> 라는 점 입니다. 어렵지 않은 비정형데이터의 분석을 직접 경험해 보세요.</p>,
+            바로 <span style={{color: "#0062FF", fontWeight: "600"}}>비정형 데이터</span> 라는 점 입니다. 어렵지 않은 비정형 데이터의 분석을 직접 경험해 보세요.</p>,
             taHashtag: t('DigitalJourney.WDHashtag'),
             taConfig: <ul>
                         <li>비정형 데이터 분석의 기본 개념 살펴 보기</li>

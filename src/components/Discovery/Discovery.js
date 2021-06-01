@@ -33,7 +33,7 @@ const Discovery = () => {
                         <SummaryDescription>
                             <div style={{display: "inline-block", textAlign: "left"}}>
                             <ul>
-                                <li>대상: 비즈니스에 머신러닝 및 AI를 적용하고자 하는 고객사 임원, 현업 리더, IT 리더, CDO 등</li>
+                                <li>대상: 비즈니스에 머신 러닝 및 AI를 적용하고자 하는 고객사 임원, 현업 리더, IT 리더, CDO 등</li>
                                 <li>소요 시간: 1일 (협의 필요)</li>
                             </ul>
                             </div>        
@@ -82,7 +82,7 @@ const Discovery = () => {
                         <SummaryDescription>
                             <div style={{display: "inline-block", textAlign: "left"}}>
                             <ul>
-                                <li>대상: 비즈니스에 머신러닝 및 AI를 적용하고자 하는 고객사 임원, 현업 리더, IT 리더, CDO 등</li>
+                                <li>대상: 비즈니스에 머신 러닝 및 AI를 적용하고자 하는 고객사 임원, 현업 리더, IT 리더, CDO 등</li>
                                 <li>소요 시간: 1일 (협의 필요)</li>
                             </ul>
                             </div>        
