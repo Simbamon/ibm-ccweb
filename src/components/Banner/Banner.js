@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, FlexContainer, Flexbox1, Flexbox2, BannerTitle, BannerSubtitle, ButtonWrapper, Button, ButtonText , 
+import { Wrapper, FlexContainer, Flexbox1, Flexbox2, BannerTitle, BannerSubtitle, ButtonWrapper, Button, 
         ImageWrapper, BannerImage, BannerImageText } from './Banner.element'
 function Banner() {
     return (
@@ -12,15 +12,10 @@ function Banner() {
                         지금 바로 IBM 파트너월드에 방문하셔서, 비즈니스 파트너에게 제공되는 다양한 혜택을 만나보세요.   
                         </BannerSubtitle>
                         <ButtonWrapper>
-                            <div style={{display: 'flex'}}>
-                                <Button style={{display: 'table'}}>
-                                    <ButtonText>자세히 보기</ButtonText>
-                                </Button>
-                                <Button>
-                                    <ButtonText>IBM 파트너월드<br></br> 바로 가기</ButtonText>
-                                </Button>
-                            </div>
+                            <Button>자세히 보기</Button>
+                            <Button>IBM 파트너월드 바로 가기</Button>
                         </ButtonWrapper>
+                                
                     </Flexbox1>
                     <Flexbox2>
                         <ImageWrapper>

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
     color: #FFF;
     padding: 70px 0;
-    background-color: #000000;
+    background-color: #044ADE;
 `
 
 export const FlexContainer = styled.div`
@@ -43,36 +43,30 @@ export const ButtonWrapper = styled.div`
     display: flex;
 `
 
-export const Button = styled.div`
-    background: #0062FF;
+export const Button = styled.button`
+    background: #FFF;
     display:table;
     height:36px;
     white-space: nowrap;
-    color: #fff;
+    color: #000000;
     font-size: 0.8rem;
     font-weight: bold;
     outline: none;
     border: none;
     cursor: pointer;
     margin-right: 15px;
-    width: 120px;
+    min-width: 170px;
 
     &:hover {
         transition: all 0.3s ease-out;
         border: none;
-        background: white;
-        color: black;
+        background: #000000;
+        color: #FFF;
     }
 
     @media screen and (max-width: 768px) {
         margin-bottom: 50px;
     }
-`
-
-export const ButtonText = styled.p`
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
 `
 
 export const Flexbox2 = styled.div`
@@ -103,7 +97,7 @@ export const BannerImage = styled.img `
 `
 
 export const BannerImageText = styled.p `
-    color: #009D9A;
+    color: #FFF;
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.5rem;
