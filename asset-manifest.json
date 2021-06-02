@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ibm-demozone/static/js/main.9f330c23.chunk.js",
-    "main.js.map": "/ibm-demozone/static/js/main.9f330c23.chunk.js.map",
+    "main.js": "/ibm-demozone/static/js/main.b92ec630.chunk.js",
+    "main.js.map": "/ibm-demozone/static/js/main.b92ec630.chunk.js.map",
     "runtime-main.js": "/ibm-demozone/static/js/runtime-main.0decf849.js",
     "runtime-main.js.map": "/ibm-demozone/static/js/runtime-main.0decf849.js.map",
     "static/js/2.af4b95cb.chunk.js": "/ibm-demozone/static/js/2.af4b95cb.chunk.js",
@@ -26,6 +26,6 @@
   "entrypoints": [
     "static/js/runtime-main.0decf849.js",
     "static/js/2.af4b95cb.chunk.js",
-    "static/js/main.9f330c23.chunk.js"
+    "static/js/main.b92ec630.chunk.js"
   ]
 }
