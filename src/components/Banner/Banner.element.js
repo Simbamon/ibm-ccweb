@@ -41,6 +41,12 @@ export const BannerSubtitle = styled.h1 `
 `
 export const ButtonWrapper = styled.div`
     display: flex;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 `
 
 export const Button = styled.button`
@@ -56,6 +62,7 @@ export const Button = styled.button`
     cursor: pointer;
     margin-right: 15px;
     min-width: 170px;
+    text-decoration: none;
 
     &:hover {
         transition: all 0.3s ease-out;
@@ -65,7 +72,9 @@ export const Button = styled.button`
     }
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 50px;
+        min-width: 160px;
+        justify-content: center;
+        align-items: center;
     }
 `
 

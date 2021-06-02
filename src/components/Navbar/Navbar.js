@@ -19,6 +19,11 @@ const Navbar = () => {
         }
     }
 
+    function refreshPage() {
+        window.scrollTo(0, 0)
+        window.location.reload();
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
     }, [])
@@ -31,7 +36,7 @@ const Navbar = () => {
             <IconContext.Provider scrollNav = {scrollNav} value= {{ color: (scrollNav ? '#000000' : '#FFF')}}>
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
-                        <NavLogo scrollNav = {scrollNav} to='/' >
+                        <NavLogo scrollNav = {scrollNav} onClick={refreshPage} >
                             IBM Client Center Korea
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>

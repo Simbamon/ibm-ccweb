@@ -106,7 +106,7 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 22px;
+  font-size: 1.5rem;
   padding-right: 20px;
   border-bottom: 0.5px solid transparent;
 
@@ -231,6 +231,12 @@ export const FooterLogoImage = styled.img `
     max-width: 81px;
     vertical-align: middle;
     display: inline-block;
+
+    @media screen and (max-width: 420px) {
+        padding: 10px;
+        max-height: 50px;
+        max-width: 110px;
+    }
     
 `
 
@@ -241,5 +247,23 @@ export const FooterLogoImageCopyright = styled.p `
 
     @media screen and (max-width: 820px) {
         font-size: 7px;
+    }
+`
+
+export const IconSpan = styled.span `
+    word-spacing: nowrap; 
+    display: inline-block;
+
+    svg {
+        height: 1.7rem; 
+        width: 1.7rem; 
+        position: relative;
+        fill: #FFF;
+        
+        &:hover{
+            fill: #00adef;
+            transition: 0.3s ease-out;
+        } 
+
     }
 `

@@ -4,7 +4,7 @@ import { InfoSec, InfoRow, InfoColumn, TextWrapper, Heading, SubHeading, Program
 import Image from '../../images/laptop.jpg'
 
 const InfoSection = () => {
-    
+
     return (
         <>
             <InfoSec img = {Image} alt='usa' id="program">
@@ -15,7 +15,7 @@ const InfoSection = () => {
                                     
                                     <Heading>여러분들의 고민 해결을 위한</Heading>
                                     <SubHeading>IBM Client Center 프로그램</SubHeading>
-                                    <a href="https://ibm.com" target="_blank" rel="noreferrer">
+                                    <a href="https://ibm.biz/ClientCenterProgram" target="_blank" rel="noreferrer">
                                         <ProgramLink><Icon /> 프로그램북 다운로드</ProgramLink>
                                     </a>
                                     <Subtitle>IBM Client Center 프로그램은 <span style={{color: "#0062FF", fontWeight: "600"}}>세 가지 타입의 프로그램</span>으로 구성되어 있으며 고객 상황에 따라 <span style={{color: "#0062FF", fontWeight: "600"}}>맞춤형 아젠다</span>를 제공해 드립니다.<br></br>

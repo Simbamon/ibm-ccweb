@@ -2,6 +2,7 @@ import React from 'react'
 import { Wrapper, FlexContainer, Flexbox1, Flexbox2, BannerTitle, BannerSubtitle, ButtonWrapper, Button, 
         ImageWrapper, BannerImage, BannerImageText } from './Banner.element'
 function Banner() {
+    
     return (
         <>
             <Wrapper>
@@ -12,8 +13,12 @@ function Banner() {
                         지금 바로 IBM 파트너월드에 방문하셔서, 비즈니스 파트너에게 제공되는 다양한 혜택을 만나보세요.   
                         </BannerSubtitle>
                         <ButtonWrapper>
-                            <Button>자세히 보기</Button>
-                            <Button>IBM 파트너월드 바로 가기</Button>
+                            <a href="https://ibm.box.com/v/PartnerProgramGuide" target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
+                                <Button>자세히 보기</Button>
+                            </a>
+                            <a href="https://www.ibm.com/kr-ko/partnerworld/public" target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
+                                <Button>IBM 파트너월드 바로 가기</Button>
+                            </a>
                         </ButtonWrapper>
                                 
                     </Flexbox1>
