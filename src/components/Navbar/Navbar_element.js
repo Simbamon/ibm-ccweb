@@ -97,12 +97,12 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 60px;
-  border-bottom: 2px solid transparent;
   line-height: 15px;
+  margin-right: 10px;
 
   @media screen and (max-width: 960px) {
     width: 100%;
-
+    margin-right: 0px;
     &:hover {
       border: none;
     }
@@ -193,6 +193,7 @@ export const ReserveButton = styled.button`
     cursor: pointer;
     margin-right: 0;
     width: 100%;
+    min-width: 170px;
     border: ${({scrollNav}) => (scrollNav ? '2px solid #000000' : '2px solid #FFF')};
     &:hover {
         transition: all 0.3s ease-out;
