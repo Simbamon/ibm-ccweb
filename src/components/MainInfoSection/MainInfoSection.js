@@ -25,7 +25,9 @@ const MainInfoSection = () => {
                     <br></br>
                     <MainParagraph>무료로 제공되는 다양한 고객 경험 프로그램으로 당신의 고민을 시원하게 해결해 드립니다.</MainParagraph>
                     <ButtonsDiv>
-                        <ReserveButton>프로그램 신청하기</ReserveButton>
+                        <a href="https://www.ibm.com/account/reg/kr-ko/signup?formid=urx-50649" rel="noreferrer">
+                            <ReserveButton>프로그램 신청하기</ReserveButton>
+                        </a>
                         <ProgramExplore>
                             <Link
                                 activeClass="active"

@@ -123,7 +123,7 @@ export const ReserveButton = styled.button`
     border: none;
     cursor: pointer;
     margin-right: 30px;
-    width: 30%;
+    width: 90%;
 
 
     &:hover {

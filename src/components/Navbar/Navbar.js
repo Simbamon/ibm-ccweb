@@ -51,7 +51,7 @@ const Navbar = () => {
                                 </a>
                             </NavItem>
                             <NavItem style={{marginRight: '0px'}}>
-                                <a href="https://ibm.com/kr-ko" target="_blank" rel="noreferrer">    
+                                <a href="https://www.ibm.com/account/reg/kr-ko/signup?formid=urx-50649" rel="noreferrer">    
                                     <ReserveButton scrollNav = {scrollNav}>프로그램 신청하기</ReserveButton>
                                 </a>
                             </NavItem>
