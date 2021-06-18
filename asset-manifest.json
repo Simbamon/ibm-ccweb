@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/ibm-ccweb/static/js/main.0e605f6e.chunk.js",
-    "main.js.map": "/ibm-ccweb/static/js/main.0e605f6e.chunk.js.map",
+    "main.js": "/ibm-ccweb/static/js/main.f0f6426b.chunk.js",
+    "main.js.map": "/ibm-ccweb/static/js/main.f0f6426b.chunk.js.map",
     "runtime-main.js": "/ibm-ccweb/static/js/runtime-main.20b54085.js",
     "runtime-main.js.map": "/ibm-ccweb/static/js/runtime-main.20b54085.js.map",
     "static/js/2.d431c902.chunk.js": "/ibm-ccweb/static/js/2.d431c902.chunk.js",
     "static/js/2.d431c902.chunk.js.map": "/ibm-ccweb/static/js/2.d431c902.chunk.js.map",
     "index.html": "/ibm-ccweb/index.html",
     "static/js/2.d431c902.chunk.js.LICENSE.txt": "/ibm-ccweb/static/js/2.d431c902.chunk.js.LICENSE.txt",
+    "static/media/1..dc7841b7.JPG": "/ibm-ccweb/static/media/1..dc7841b7.JPG",
     "static/media/build.png": "/ibm-ccweb/static/media/build.18816e7e.png",
     "static/media/dw.jpg": "/ibm-ccweb/static/media/dw.7b1d19b2.jpg",
     "static/media/dwpic.png": "/ibm-ccweb/static/media/dwpic.7f0bd5a6.png",
@@ -16,7 +17,6 @@
     "static/media/getFetch.cjs": "/ibm-ccweb/static/media/getFetch.d7d6010d.cjs",
     "static/media/ibm.png": "/ibm-ccweb/static/media/ibm.e94aa12b.png",
     "static/media/laptop.cd6f5146.jpg": "/ibm-ccweb/static/media/laptop.cd6f5146.jpg",
-    "static/media/mainImg.bc4d79d3.png": "/ibm-ccweb/static/media/mainImg.bc4d79d3.png",
     "static/media/sell.png": "/ibm-ccweb/static/media/sell.c758fd1e.png",
     "static/media/service.png": "/ibm-ccweb/static/media/service.4ab91e31.png",
     "static/media/tb.jpg": "/ibm-ccweb/static/media/tb.8a41a900.jpg",
@@ -25,6 +25,6 @@
   "entrypoints": [
     "static/js/runtime-main.20b54085.js",
     "static/js/2.d431c902.chunk.js",
-    "static/js/main.0e605f6e.chunk.js"
+    "static/js/main.f0f6426b.chunk.js"
   ]
 }
