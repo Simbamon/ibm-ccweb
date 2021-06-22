@@ -61,17 +61,18 @@ const ExperienceDay = () => {
 
     function changeWD() {
         setState({
-            taIntro: <p>콜 로그 분석,  마켓 분석,  고객 요구 분석,  기술 문서 분석을 위해 수집된 데이터의 공통점은?<br></br>
-            바로 <span style={{color: "#0062FF", fontWeight: "600"}}>비정형 데이터</span> 라는 점 입니다. 어렵지 않은 비정형 데이터의 분석을 직접 경험해 보세요.</p>,
+            taIntro: <p>여기 저기 흩어져 있는 복잡한 데이터… AI를 적용하기엔 뭔가 부족하다가 느끼시죠?<br></br>
+            <span style={{color: "#0062FF", fontWeight: "600"}}>고품질의 데이터로 AI로의 여정을 가속화</span>하는 <span style={{color: "#0062FF", fontWeight: "600"}}>DataOps</span>가 깔끔하게 해결해 드립니다.</p>,
             taHashtag: t('DigitalJourney.WDHashtag'),
             taConfig: <ul>
-                        <li>비정형 데이터 분석의 기본 개념 살펴 보기</li>
-                        <li>효율적인 데이터 분석, 사례로 이해해 보기</li>
-                        <li>분석의 기반 기술 및 플랫폼에 대해 알아 보기</li>
-                        <li>실습을 통해 분석 과정과 결과 알아 보기</li>
+                        <li>DataOps 와 Catalog 기본 개념 살펴 보기</li>
+                        <li>데이터 품질과 거버너스를 위한 수단에 대해 알아보기</li>
+                        <li>데이터 공급자의 데이터 준비과정 알아보기</li>
+                        <li>데이터 거버넌스 아티팩트 구성해 보기</li>
+                        <li>효율적인 데이터 소비자를 위한 카탈로그 만들어 보기</li>
                     </ul>,
             taGuide: <ul>
-                        <li>대상: 비정형 데이터를 다루는 현업, IT 팀, 앱 개발자, 아키텍트 등</li>
+                        <li>대상 : 데이터 분석 및 AI 적용을 확대하고자 하는 현업,  IT 팀, 앱 개발자, 아키텍트 등</li>
                         <li>소요 시간: 4시간</li>
                     </ul>,
         })
@@ -111,8 +112,8 @@ const ExperienceDay = () => {
                     <MainFlexbox>                     
                         <Flexbox2>
                             <ButtonBox>
-                                <ExampleButton onClick={changeDS} className={dsClicked ? 'active': ''}>Data Science Exp. Day</ExampleButton>
-                                <ExampleButton onClick={changeWD} className={wdClicked ? 'active' : ''}>Watson Discovery Exp. Day</ExampleButton>
+                                <ExampleButton onClick={changeDS} className={dsClicked ? 'active': ''}>MLOps Exp. Day</ExampleButton>
+                                <ExampleButton onClick={changeWD} className={wdClicked ? 'active' : ''}>DataOps Exp. Day</ExampleButton>
                                 <ExampleButton onClick={changeAM} className={amClicked ? 'active' : ''}>App Modernization Exp. Day</ExampleButton>
                             </ButtonBox>
                             <SummaryTitleBox>
