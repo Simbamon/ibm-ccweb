@@ -11,9 +11,9 @@ const TechonologyBriefing = () => {
         taIntro: t('DigitalJourney.DAIIntro'),
         taConfig: <ul>
                     <li>마이크로 서비스 아키텍처가 무엇인가요?</li>
-                    <li>기존 아키텍처와 마이크로 서비스 아키텍처 비교해 보기</li>
+                    <li>기존 아키텍처와 마이크로서비스 아키텍처 비교해 보기</li>
                     <li>마이크로 서비스 디자인의 기본 원리 이해하기 </li>
-                    <li>클라우드 네이티브 앱 개발을 위한 개발 방법론 알아 보기 </li>
+                    <li>클라우드 네이티브 앱 개발을 위한 개발 방법론 알아보기</li>
                 </ul>,
         taGuide: <ul>
                     <li>대상 : 신규 사업 전략팀,  CxO, 현업 등 AI를 적용해 보고자 하는 관련 부서 , 담당자 모두 가능</li>

@@ -65,7 +65,7 @@ const ExperienceDay = () => {
             <span style={{color: "#0062FF", fontWeight: "600"}}>고품질의 데이터로 AI로의 여정을 가속화</span>하는 <span style={{color: "#0062FF", fontWeight: "600"}}>DataOps</span>가 깔끔하게 해결해 드립니다.</p>,
             taHashtag: t('DigitalJourney.WDHashtag'),
             taConfig: <ul>
-                        <li>DataOps 와 Catalog 기본 개념 살펴 보기</li>
+                        <li>DataOps와 Catalog 기본 개념 살펴 보기</li>
                         <li>데이터 품질과 거버너스를 위한 수단에 대해 알아보기</li>
                         <li>데이터 공급자의 데이터 준비과정 알아보기</li>
                         <li>데이터 거버넌스 아티팩트 구성해 보기</li>

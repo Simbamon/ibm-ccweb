@@ -1,7 +1,7 @@
 {
-  "name": "ibm-demozone",
+  "name": "ibm-ccweb",
   "version": "0.1.0",
-  "homepage": "https://simbamon.github.io/ibm-demozone",
+  "homepage": "https://simbamon.github.io/ibm-ccweb",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
