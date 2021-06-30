@@ -1,40 +1,62 @@
 import styled from 'styled-components'
 import { FiCheckSquare } from 'react-icons/fi'
 
-export const BackgroundVid = styled.div `
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    height: 85vh;
-    overflow: hidden;
-    background: 
-    url(${props => props.img});
-    background-size: 100% 100%;
+export const BackgroundSection = styled.div`
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     max-width: 100%;
+     overflow: hidden;
+     background: black;
+`
+export const Container = styled.div `
+    display: table-cell;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    
+
+    @media screen and (max-width: 991px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
     
 `
 
-export const Videosrc = styled.video `
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    
+export const MainFlexbox = styled.div`
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    @media screen and (max-width: 991px) {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
 `
 
 export const Wrapper = styled.div `
     display: flex;
     justify-content: flex-start;
-    max-width: 100%;
+    flex-wrap: wrap;
     align-items: center;
-    height: 85vh;
+    justify-content:center;
+    flex-direction: row;
+    flex-basis: 50%;
+    align-items: center;
+    height: 70%;
     min-height: -webkit-fill-available;
-
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 5%;
 
     @media screen and (max-width: 991px) {
         max-width: 1300px;
@@ -50,10 +72,9 @@ export const Wrapper = styled.div `
 
 export const TitleTextWrapper = styled.div `
     border: none;
-    min-width: 350px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    align-items: center;
+    width: 100%;
     padding: 45px 15px 45px 15px;
-    position: absolute;
     display: flex;
     flex-direction: column;
     z-index: 3;
@@ -163,7 +184,4 @@ export const ProgramExplore = styled.p `
     &:hover {
         background-size: 100% 2px;
     }
-
-    
-
 `

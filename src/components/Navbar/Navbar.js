@@ -42,7 +42,7 @@ const Navbar = () => {
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
                         </MobileIcon>
-                        <NavMenu onClick={handleClick} click={click}>
+                        <NavMenu scrollNav = {scrollNav} onClick={handleClick} click={click}>
                             <NavItem>
                             </NavItem>
                             <NavItem>

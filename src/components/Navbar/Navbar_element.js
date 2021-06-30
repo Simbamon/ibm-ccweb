@@ -36,7 +36,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
-  color: ${({scrollNav}) => (scrollNav ? '#000000' : 'white')};;
+  color: ${({scrollNav}) => (scrollNav ? '#000000' : 'white')};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -91,7 +91,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? '0' : '-100%')};
     opacity: 1;
     transition: all 0.3s ease;
-    background: rgb(30, 30, 30);
+    background: ${({scrollNav}) => (scrollNav ? '#FFF' : '#000000')};
   }
 `;
 
