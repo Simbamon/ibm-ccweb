@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavBottom, SocialIcon, ReserveButton } from './Navbar_element'
+import { Nav, NavbarContainer, NavLogo, NavSubLogo, MobileIcon, NavMenu, NavItem, NavBottom, SocialIcon, ReserveButton } from './Navbar_element'
 import { IconContext } from 'react-icons/lib'
 
 const Navbar = () => {
@@ -37,7 +37,10 @@ const Navbar = () => {
                 <Nav scrollNav = {scrollNav}>
                     <NavbarContainer>
                         <NavLogo scrollNav = {scrollNav} onClick={refreshPage} >
-                            IBM Client Center Korea
+                            IBM 
+                            <NavSubLogo scrollNav = {scrollNav}>
+                                Client Center Korea
+                            </NavSubLogo>
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
@@ -68,3 +71,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

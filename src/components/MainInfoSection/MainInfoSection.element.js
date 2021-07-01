@@ -53,7 +53,7 @@ export const Wrapper = styled.div `
     flex-direction: row;
     flex-basis: 50%;
     align-items: center;
-    height: 70%;
+    height: 100%;
     min-height: -webkit-fill-available;
     margin-right: auto;
     margin-left: auto;
@@ -86,19 +86,19 @@ export const TitleTextWrapper = styled.div `
 
 export const MainTitle = styled.h1 `
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: left;
     padding-top: 20px;
     margin-bottom: 30px;
 
     @media screen and (max-width: 768px) {
-        font-size: 1rem;
-        max-width: 250px;
+        font-size: 1.7rem;
+        max-width: 100%;
     }
     
     @media screen and (max-width: 480px) {
-        font-size: 1rem;
-        max-width: 250px;
+        font-size: 1.2rem;
+        max-width: 100%;
     }
 `
 
@@ -106,7 +106,7 @@ export const MainParagraph = styled.p `
     margin-top: 8px;
     padding-left: 5px;
     color: #fff;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-align: left;
     max-width: 700px;
     @media screen and (max-width: 768px) {
@@ -183,5 +183,15 @@ export const ProgramExplore = styled.p `
 
     &:hover {
         background-size: 100% 2px;
+    }
+`
+
+export const VideoWrapper = styled.div`
+    padding-right: 5vw;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding-right: 0vw;
+        width: 90vw;
     }
 `

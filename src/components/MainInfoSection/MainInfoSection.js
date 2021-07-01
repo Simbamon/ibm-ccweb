@@ -1,8 +1,8 @@
 import React from 'react'
-import { Wrapper, BackgroundSection, MainFlexbox, TitleTextWrapper, MainTitle, MainParagraph, Icon, ButtonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
+import { Wrapper, BackgroundSection, MainFlexbox, TitleTextWrapper, MainTitle, MainParagraph, VideoWrapper, Icon, ButtonsDiv, ReserveButton, ProgramExplore} from './MainInfoSection.element'
 import { Player, BigPlayButton } from 'video-react'
 import { Link } from "react-scroll";
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 import 'video-react/dist/video-react.css';
 
 const MainInfoSection = () => {
@@ -14,7 +14,7 @@ const MainInfoSection = () => {
                 <Wrapper>
                     <TitleTextWrapper>
                         <Fade left>
-                        <div style={{backgroundColor:"blue"}}>
+                        <div>
                         <MainTitle>쌓여가는 데이터! 고민되시죠?</MainTitle>
                         <MainParagraph><Icon /> 데이터는 넘쳐나는데.. 도대체 무엇을 해야 하지?</MainParagraph>
                         <MainParagraph><Icon /> 우리 회사엔 데이터 사이언티스트도 없는데..</MainParagraph>
@@ -46,15 +46,16 @@ const MainInfoSection = () => {
                     </TitleTextWrapper>
                 </Wrapper>
                 <Wrapper>
-                    <div style={{paddingRight:"5vw", width:"100%"}}>
+
+                    <VideoWrapper>
                         <Player
                             playsInline
-                            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                            src= "https://cc-video.s3.jp-tok.cloud-object-storage.appdomain.cloud/video.mp4"
                             fluid={true}
                         >
                             <BigPlayButton position="center" />
                         </Player>
-                    </div>
+                    </VideoWrapper>
                 </Wrapper>
             </MainFlexbox>
             
@@ -66,3 +67,4 @@ const MainInfoSection = () => {
 }
 
 export default MainInfoSection
+

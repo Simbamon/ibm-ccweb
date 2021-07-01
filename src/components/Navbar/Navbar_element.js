@@ -47,6 +47,12 @@ export const NavLogo = styled(Link)`
   font-size: 20px;
 `;
 
+export const NavSubLogo = styled.p`
+  color: ${({scrollNav}) => (scrollNav ? '#000000' : 'white')};
+  font-weight: normal;
+  margin-left: 7px;
+`
+
 export const NavIcon = styled.img`
     padding-right: 0;
     border: 0;
